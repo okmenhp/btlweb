@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Oxanium:400,500,600,700,800|Poppins:400,400i,500,500i,600,600i,700,700i&display=swap');
+@font-face {
+    font-family: 'grinddemolished';
+    src: url('../fonts/grind_demolished-webfont.woff2') format('woff2'), url('../fonts/grind_demolished-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 500;
+    color: #d4d4d4;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+li {
+    list-style: none;
+}
+
+.bg {
+    background-image: url('/assets/images/h3_header_bg.jpg');
+    height: 128px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.header-top-area {
+    position: relative;
+    border-bottom: 1px solid rgb(50 49 49 / .7);
+    padding: 15px 0;
+}
+
+.header-top-area li {
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    font-family: 'Oxanium', cursive;
+    line-height: 1;
+    letter-spacing: 2px;
+    margin-right: 5px;
+}
+
+.header-bottom-area ul {
+    display: flex;
+}
+
+.header-bottom-area .left li {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    font-family: 'Oxanium', cursive;
+    line-height: 1;
+    letter-spacing: 2px;
+    margin-right: 35px;
+}
+
+.header-bottom-area .right li {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    font-family: 'Oxanium', cursive;
+    line-height: 1;
+    letter-spacing: 2px;
+    margin-left: 35px;
+}
+
+.header-bottom-area .right {
+    justify-content: end;
+}
+
+.logo img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+
+/* .header-bottom-bg {
+    background-image: url('/assets/images/header_bottom_bg.png');
+    width: 1499px;
+    height: 28px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: -1;
+} */
