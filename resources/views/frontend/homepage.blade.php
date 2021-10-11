@@ -29,7 +29,7 @@
                     <div class="row">
                         <div class="col-sm-6 pt-4">
                             <ul class="left">
-                                <li>HOME</li>
+                                <li>TRANG CHỦ</li>
                                 <li>ABOUT</li>
                                 <li>OVERVIEW</li>
                                 <li>COMMUNITY</li>
