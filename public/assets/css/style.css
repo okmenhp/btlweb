@@ -1,17 +1,16 @@
-@import url('https://fonts.googleapis.com/css?family=Oxanium:400,500,600,700,800|Poppins:400,400i,500,500i,600,600i,700,700i&display=swap');
+/* @import url('https://fonts.googleapis.com/css?family=Oxanium:400,500,600,700,800|Poppins:400,400i,500,500i,600,600i,700,700i&display=swap');
 @font-face {
     font-family: 'grinddemolished';
     src: url('../fonts/grind_demolished-webfont.woff2') format('woff2'), url('../fonts/grind_demolished-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-}
+} */
 
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap');
 body {
     font-family: 'Play', sans-serif;
     font-style: normal;
     font-size: 14px;
-    /* font-weight: 500; */
     color: #d4d4d4;
 }
 
@@ -44,13 +43,13 @@ li {
 
 .header-top-area li {
     font-size: 10px;
-    text-transform: uppercase;
-    font-weight: 700;
+    /* text-transform: uppercase; */
+    font-weight: 800;
     color: #fff;
     font-family: 'Play', sans-serif;
-    line-height: 1;
+    /* line-height: 1; */
     letter-spacing: 2px;
-    margin-right: 5px;
+    /* margin-right: 5px; */
 }
 
 .header-bottom-area ul {
@@ -65,7 +64,7 @@ li {
     font-family: 'Play', sans-serif;
     line-height: 1;
     letter-spacing: 2px;
-    margin-right: 35px;
+    margin-right: 25px;
 }
 
 .header-bottom-area .right li {
@@ -76,7 +75,7 @@ li {
     font-family: 'Play', sans-serif;
     line-height: 1;
     letter-spacing: 2px;
-    margin-left: 35px;
+    margin-left: 20px;
 }
 
 .header-bottom-area .right {

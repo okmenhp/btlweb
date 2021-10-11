@@ -9,7 +9,7 @@
 <body>
     <div class="header">
         <div class="bg"></div>
-        <div class="sticky-header">
+        {{-- <div class="sticky-header"> --}}
             <div class="container custom-container">
                 <div class="header-top-area d-lg-block">
                     <div class="row">
@@ -29,24 +29,24 @@
                         <div class="col-sm-6 pt-4">
                             <ul class="left">
                                 <li>TRANG CHỦ</li>
-                                <li>ABOUT</li>
-                                <li>OVERVIEW</li>
-                                <li>COMMUNITY</li>
+                                <li>GIỚI THIỆU</li>
+                                <li>TIN TỨC</li>
+                                <li>SỰ KIỆN</li>
                             </ul>
                         </div>
                         <div class="col-sm-6 pt-4">
                             <ul class="right">
-                                <li>PAGES</li>
-                                <li>STORE</li>
-                                <li>BLOG</li>
-                                <li>CONTACT</li>
+                                <li>VIDEO</li>
+                                <li>CỘNG ĐỒNG</li>
+                                <li>CỬA HÀNG</li>
+                                <li>LIÊN HỆ</li>
                                 <li><i class="fa fa-search"></i></li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        {{-- </div> --}}
         <!-- <div class="header-bottom-bg"></div> -->
     </div>
 </body>
