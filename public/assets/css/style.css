@@ -15,16 +15,8 @@ li {
     list-style: none;
 }
 
-.bg {
+.header {
     background-image: url('/assets/images/h3_header_bg.jpg');
-    height: 100px;
-    width: 100%;
-    left: 0;
-    top: 0;
-    position: absolute;
-    background-position: center;
-    background-size: cover;
-    z-index: -1;
 }
 
 .custom-container {
@@ -79,6 +71,12 @@ li {
 
 .logo img {
     position: absolute;
+    z-index: 5;
+    top: 0;
+}
+
+.banner {
+    height: 300px;
     left: 0;
     right: 0;
     margin: 0 auto;
