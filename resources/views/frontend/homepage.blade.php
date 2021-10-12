@@ -9,7 +9,6 @@
 <body>
     <div class="header">
         <div class="bg"></div>
-        {{-- <div class="sticky-header"> --}}
             <div class="container custom-container">
                 <div class="header-top-area d-lg-block">
                     <div class="row">
@@ -38,7 +37,7 @@
                             <ul class="right">
                                 <li>VIDEO</li>
                                 <li>CỘNG ĐỒNG</li>
-                                <li>CỬA HÀNG</li>
+                                <li>CẨM NANG</li>
                                 <li>LIÊN HỆ</li>
                                 <li><i class="fa fa-search"></i></li>
                             </ul>
@@ -46,9 +45,11 @@
                     </div>
                 </div>
             </div>
-        {{-- </div> --}}
-        <!-- <div class="header-bottom-bg"></div> -->
+            <div class="your-class">
+                <div>your content</div>
+                <div>your content</div>
+                <div>your content</div>
+            </div>
     </div>
 </body>
-
 </html>

@@ -1,11 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css?family=Oxanium:400,500,600,700,800|Poppins:400,400i,500,500i,600,600i,700,700i&display=swap');
-@font-face {
-    font-family: 'grinddemolished';
-    src: url('../fonts/grind_demolished-webfont.woff2') format('woff2'), url('../fonts/grind_demolished-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-} */
-
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap');
 body {
     font-family: 'Play', sans-serif;
@@ -25,7 +17,7 @@ li {
 
 .bg {
     background-image: url('/assets/images/h3_header_bg.jpg');
-    height: 128px;
+    height: 100px;
     width: 100%;
     left: 0;
     top: 0;
@@ -35,19 +27,22 @@ li {
     z-index: -1;
 }
 
+.custom-container {
+    max-width: 1330px;
+}
+
 .header-top-area {
     position: relative;
     border-bottom: 1px solid rgb(50 49 49 / .7);
-    padding: 15px 0;
+    padding: 12px 0;
 }
 
 .header-top-area li {
     font-size: 10px;
-    /* text-transform: uppercase; */
     font-weight: 800;
     color: #fff;
     font-family: 'Play', sans-serif;
-    /* line-height: 1; */
+    line-height: 1;
     letter-spacing: 2px;
     /* margin-right: 5px; */
 }
