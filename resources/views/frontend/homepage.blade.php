@@ -11,17 +11,17 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/font-awesome.min.css') }}">
     <script src="{{ asset('assets/js/jquery.min.js') }}"></script>
    
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/slick.css') }}"/>
+    <script type="text/javascript" src="{{ asset('assets/js/slick.min.js') }}"></script>
 
 
 </head>
 <body>
-    <div class="header" style="background-image: url('https://themebeyond.com/html/geco/Geco/img/bg/h3_header_bg.jpg')">
+    {{-- Header --}}
+    <div class="header">
         <div class="container">
-            <div class="row header__follow">
-                {{-- <p>FOLLOW</p> --}}
+            <div class="header-follow">
+                <p class="text-follow">FOLLOW</p>
                 <div class="col-md-6">
                     <div class="social-btns">
                         <a class="btn facebook" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -32,31 +32,32 @@
                 </div>
                 <div class="col-md-6"></div>
             </div>
-            <hr class="header__line">
             <div class="logo">
                 <img src="https://themebeyond.com/html/geco/Geco/img/logo/h6_logo.png" alt="logo" class="logo-center">
             </div>
-            <div class="row header__menu">
-                <div class="col-md-6 menu__left">
+            <div class="row header-menu">
+                <div class="col-md-6 menu-left">
                     <ul>
-                        <li>TRANG CHỦ</li>
-                        <li>GIỚI THIỆU</li>
-                        <li>TIN TỨC</li>
-                        <li>SỰ KIỆN</li>
+                        <li><a href="" class="active">TRANG CHỦ</a></li>
+                        <li><a href="">GIỚI THIỆU</a></li>
+                        <li><a href="">TIN TỨC</a></li>
+                        <li><a href="">SỰ KIỆN</a></li>
                     </ul>
                 </div>
-                <div class="col-md-6 menu__right d-flex justify-content-end align-item-center">
+                <div class="col-md-6 menu-right d-flex justify-content-end align-item-center">
                     <ul>
-                        <li>VIDEO</li>
-                        <li>HƯỚNG DẪN</li>
-                        <li>HỖ TRỢ</li>
-                        <li>LIÊN LẠC</li>
-			            <li><i class="fa fa-search"></i></li>
+                        <li><a href="">VIDEO</a></li>
+                        <li><a href="">HƯỚNG DẪN</a></li>
+                        <li><a href="">HỖ TRỢ</a></li>
+                        <li><a href="">LIÊN LẠC</a></li>
+			            <li><a href="javascript:void(0)"><i class="fa fa-search"></i></a></li>
+                        
                     </ul>
                 </div>
             </div>
         </div>
     </div>
+    {{-- Banner --}}
     <div class="banner">
         <div class="container">
             {{-- <h1>TIN TỨC</h1> --}}
@@ -125,15 +126,135 @@
             </div>
         </div>
     </div>
-    <div class="news">
-        
+    {{-- News --}}
+    <div class="trending-news">
+        <div class="container trending-new-container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="row pb-5">
+                        <div class="col-md-3 trending-news-title">
+                            <h4>Tin nổi bật</h4>
+                        </div>
+                        <div class="col-md-9 slick-button">
+                            <div class="slick-nav mr-2">
+                                <button type="button" class="slick-prev slick-arrow" style=""><i class="fa fa-angle-left"></i></button>
+                                <button type="button" class="slick-next slick-arrow" style=""><i class="fa fa-angle-right"></i></button>
+                            </div>
+                        </div>
+                    </div>          
+                    <div class="row">
+                        <div class="col-md-6 card-left" style="background-image: url('https://themebeyond.com/html/geco/Geco/img/blog/trand_news_thumb01.jpg');">
+                            <div class="card-left-content pb-5">
+                                <div class="card-tag">
+                                    <a href="">SỰ KIỆN</a>    
+                                </div>
+                                <div class="card-left-date">
+                                    <h6>December 19, 2021</h6>
+                                </div>
+                                <div class="card-left-title">
+                                    <a href="">Mark Sniper sell House dsđsdswhere he Killed</a>
+                                </div>
+                            </div>                               
+                        </div>
+                            <div class="col-md-6">
+                                <div class="trending-new-slick">
+                                    <div class="row card-right d-flex p-2">
+                                        <div class="col-md-4">
+                                            <img src="https://themebeyond.com/html/geco/Geco/img/blog/trand_news_thumb03.jpg" alt="">
+                                        </div>
+                                        <div class="card-right-content col-md-8">
+                                            <div class="card-tag">
+                                                <a href="">SỰ KIỆN</a>    
+                                            </div>
+                                            <div class="card-right-date">
+                                                <h6>December 19, 2021</h6>
+                                            </div>
+                                            <div class="card-right-title">
+                                                <a href="">Mark Sniper sell House where he Killed</a>
+                                            </div>
+                                        </div>                               
+                                    </div>
+                                    <div class="row card-right d-flex p-2">
+                                        <div class="col-md-4">
+                                            <img src="https://themebeyond.com/html/geco/Geco/img/blog/trand_news_thumb02.jpg" alt="">
+                                        </div>
+                                        <div class="card-right-content col-md-8">
+                                            <div class="card-tag">
+                                                <a href="">SỰ KIỆN</a>    
+                                            </div>
+                                            <div class="card-right-date">
+                                                <h6>December 19, 2021</h6>
+                                            </div>
+                                            <div class="card-right-title">
+                                                <a href="">Mark Sniper sell House where he Killed</a>
+                                            </div>
+                                        </div>                               
+                                    </div>
+                                    <div class="row card-right d-flex p-2">
+                                        <div class="col-md-4">
+                                            <img src="https://themebeyond.com/html/geco/Geco/img/blog/trand_news_thumb04.jpg" alt="">
+                                        </div>
+                                        <div class="card-right-content col-md-8">
+                                            <div class="card-tag">
+                                                <a href="">SỰ KIỆN</a>    
+                                            </div>
+                                            <div class="card-right-date">
+                                                <h6>December 19, 2021</h6>
+                                            </div>
+                                            <div class="card-right-title">
+                                                <a href="">Mark Sniper sell House where he Killed</a>
+                                            </div>
+                                        </div>                               
+                                    </div>
+                                    <div class="row card-right d-flex p-2">
+                                        <div class="col-md-4">
+                                            <img src="https://themebeyond.com/html/geco/Geco/img/blog/trand_news_thumb04.jpg" alt="">
+                                        </div>
+                                        <div class="card-right-content col-md-8">
+                                            <div class="card-tag">
+                                                <a href="">SỰ KIỆN</a>    
+                                            </div>
+                                            <div class="card-right-date">
+                                                <h6>December 19, 2021</h6>
+                                            </div>
+                                            <div class="card-right-title">
+                                                <a href="">Mark Sniper sell House where he Killed</a>
+                                            </div>
+                                        </div>                               
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="row pb-5">
+                        <div class="col-md-12 trending-news-title">
+                            <h4>Tin phổ biến</h4>
+                        </div>
+                    </div> 
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="https://themebeyond.com/html/geco/Geco/img/blog/popular_post_thumb01.jpg" alt="">
+                            <div class="title-left pt-2">Two the night before in the NFL</div>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="https://themebeyond.com/html/geco/Geco/img/blog/popular_post_thumb02.jpg" alt="">
+                            <div class="title-left pt-2">Two the night before in the NFL</div>
+                        </div>
+                    </div>
+                    <img src="https://themebeyond.com/html/geco/Geco/img/images/popular_banner.jpg" alt="" class="ads">
+                </div>
+            </div>
+        </div>
     </div>
+    {{-- Videos --}}
+
 </body>
 <script>
     $('.carousel').slick({
     arrows: false,
     autoplay: true,    
-    autoplaySpeed: 200,
+    autoplaySpeed: 1500,
     slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [{
@@ -153,5 +274,18 @@
         }
     }]
     });
+</script>
+<script>
+    $('.trending-new-slick').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: true,
+    vertical: true,
+    // verticalSwiping: true,
+    prevArrow: '.slick-prev',
+    nextArrow: '.slick-next',
+
+    });
+	
 </script>
 </html>
