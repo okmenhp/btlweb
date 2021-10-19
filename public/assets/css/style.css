@@ -35,6 +35,31 @@ p {
 }
 
 
+/* Sticky-custom */
+
+.navbar-hide {
+    display: none;
+}
+
+.nav-custom {
+    /* transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s; */
+    background-image: url('https://themebeyond.com/html/geco/Geco/img/bg/h3_header_bg.jpg');
+    z-index: 2;
+}
+
+.nav-custom a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav-custom a:hover {
+    color: #bcee0e;
+    text-decoration: none;
+}
+
+
 /* Header */
 
 .header {
@@ -119,13 +144,117 @@ p {
     height: auto;
 }
 
-
-/* .social-btns .fa:hover {
-    color: #bcee0e;
-} */
-
 .social-btns .fa i {
     text-align: center;
+}
+
+
+/* Search */
+
+.wrapper,
+.search-data {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.wrapper {
+    position: fixed;
+    height: 0px;
+    width: 0px;
+    border-radius: 100%;
+    background: linear-gradient(-135deg, rgb(23 26 33 / 95%), #2b2b2c);
+    transition: all 0.4s linear;
+}
+
+.wrapper.active {
+    z-index: 3;
+    height: 4000px;
+    width: 4000px;
+}
+
+.search-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    background: linear-gradient(-135deg, #c850c0, #4158d0);
+}
+
+.search-btn span {
+    color: #fff;
+    font-size: 22px;
+    line-height: 60px;
+}
+
+.search-data {
+    position: absolute;
+    height: 50px;
+    width: 400px;
+    display: flex;
+    text-align: center;
+    /* display: none; */
+}
+
+.search-data input {
+    height: 100%;
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.search-data .line {
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #fff;
+    bottom: 0;
+    transform: scaleX(0);
+    transition: transform 0.4s 0.3s linear;
+}
+
+.search-data .line.active {
+    transform: scaleX(1);
+}
+
+.search-data label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    font-size: 20px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.search-data input:valid~label {
+    opacity: 0;
+}
+
+.search-data span {
+    color: #fff;
+    position: absolute;
+    width: 50px;
+    font-size: 25px;
+    right: 0;
+    top: 0;
+    line-height: 45px;
+    cursor: pointer;
+}
+
+.search-data,
+.search-data span,
+.search-data label {
+    display: none;
 }
 
 
@@ -292,4 +421,72 @@ p {
 }
 
 
+/* Video */
+
+.video {
+    background-color: #252525;
+    padding: 80px 0;
+}
+
+.video-left img {
+    width: 47rem;
+    height: 31rem;
+}
+
+.video-right img {
+    width: 25rem;
+    height: 15rem;
+}
+
+
 /*  */
+
+.latest-news {
+    background-image: url('https://themebeyond.com/html/geco/Geco/img/bg/latest_game_news.jpg');
+}
+
+.latest-news a {
+    text-decoration: none;
+}
+
+.card-latest-news {
+    padding: 15px 0;
+}
+
+.card-latest-news .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 15px;
+}
+
+.card-latest-news a {
+    text-decoration: none;
+}
+
+.card-latest-news .title a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.card-latest-news .title a:hover {
+    color: #bcee0e;
+}
+
+.card-latest-news h1 {
+    font-size: 32px;
+}
+
+.card-latest-news h2 {
+    font-size: 20px;
+    color: #c5c1c1;
+}
+
+.btn-more {
+    margin: 15px 0;
+    color: white;
+}
+
+.btn-more:hover {
+    color: #bcee0e;
+}
