@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('frontend/homepage');
 });
 
+// Route::get('/admin', function () {
+//     return view('/backend/dashboard');
+// });
+
 Route::get('/admin', function () {
     return view('/backend/dashboard');
 })->middleware(['auth'])->name('dashboard');
