@@ -15,42 +15,15 @@
     <script type="text/javascript" src="{{ asset('assets/js/slick.min.js') }}"></script>
 </head>
 <body>
-    {{-- Navbar-sticky --}}
-    <nav class="navbar sticky-top navbar-hide nav-custom" id="nav-sticky">
-        <div class="container p-4 d-block">
-            <div class="row">
-               <div class="col-md-6 menu-left">
-                    <ul>
-                        <li><a href="" class="active">TRANG CHỦ</a></li>
-                        <li><a href="">GIỚI THIỆU</a></li>
-                        <li><a href="">TIN TỨC</a></li>
-                        <li><a href="">SỰ KIỆN</a></li>
-                    </ul>
-                </div>
-                <div class="logo">
-                    <img src="https://themebeyond.com/html/geco/Geco/img/logo/h6_logo.png" alt="logo" class="logo-center">
-                </div>
-                <div class="col-md-6 menu-right d-flex justify-content-end align-item-center">
-                    <ul>
-                        <li><a href="">VIDEO</a></li>
-                        <li><a href="">HƯỚNG DẪN</a></li>
-                        <li><a href="">HỖ TRỢ</a></li>
-                        <li><a href="">LIÊN LẠC</a></li>
-			            <li>
-                            <div class="btn-search"><a href="javascript:void(0)"><i class="fa fa-search"></i></a></div>
-                        </li>
-                    </ul>
-                </div> 
-            </div>
-                
-        </div>
-    </nav>
     {{-- Header --}}
+    
     <div class="header">
-        <div class="container">
-            <div class="header-follow">
-                <p class="text-follow">FOLLOW</p>
-                <div class="col-md-6">
+        <div class="container border-bottom border-header">
+            <div class="row">
+                <div class="col-md-6 p-0">
+                    <h2>LOGO</h2>
+                </div>
+                <div class="col-md-6 p-0 d-flex flex-column justify-content-center align-items-end">
                     <div class="social-btns">
                         <a class="btn facebook" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                         <a class="btn google" href="#"><i class="fa fa-google" aria-hidden="true"></i></a>
@@ -58,105 +31,104 @@
                         <a class="btn instagram" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                     </div>
                 </div>
-                <div class="col-md-6"></div>
             </div>
-            <div class="logo">
-                <img src="https://themebeyond.com/html/geco/Geco/img/logo/h6_logo.png" alt="logo" class="logo-center">
-            </div>
-            <div class="row header-menu ">
-                <div class="col-md-6 menu-left">
+        </div>
+    </div>
+    {{-- Nav --}}
+    <nav>
+        <div class="container">
+            <div class="row">
+                <div class="menu col-md-9 p-0">
                     <ul>
-                        <li><a href="" class="active">TRANG CHỦ</a></li>
-                        <li><a href="">GIỚI THIỆU</a></li>
-                        <li><a href="">TIN TỨC</a></li>
-                        <li><a href="">SỰ KIỆN</a></li>
+                        <li><a href="" class="active">Trang chủ</a></li>
+                        <li><a href="">Tin tức</a></li>
+                        <li><a href="">Sự kiện</a></li>
+                        <li><a href="">Video</a></li>
                     </ul>
                 </div>
-                <div class="col-md-6 menu-right d-flex justify-content-end align-item-center">
-                    <ul>
-                        <li><a href="">VIDEO</a></li>
-                        <li><a href="">HƯỚNG DẪN</a></li>
-                        <li><a href="">HỖ TRỢ</a></li>
-                        <li><a href="">LIÊN LẠC</a></li>
-			            <li>
-                            <div class="btn-search"><a href="javascript:void(0)"><i class="fa fa-search"></i></a></div>
-                        </li>
-                    </ul>
+                <div class="col-md-3 nav-right p-0 d-flex flex-column justify-content-center">
+                    <div class="row form-search">
+                            <form action="" class="search-input m-0">
+                                <input type="text" class="input">
+                            </form>   
+                          <button class="btn-search"><i class="fa fa-search"></i></button>  
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="wrapper">
-            <div class="search-data">
-               <input type="text" required>
-               <div class="line"></div>
-               <label>Type to search..</label>
-               <span class="fa fa-search"></span>
-            </div>
-         </div>
-    </div>
+    </nav>
     {{-- Banner --}}
     <div class="banner">
-        <div class="container">
-            {{-- <h1>TIN TỨC</h1> --}}
-            <h2>TIN TỨC MỚI NHẤT</h2>
-            <div class="banner-heading">
-                <div class="col-md-2 d-flex flex-column justify-content-center">
-                    <h5>TIN MỚI</h5>
-                </div>
-                <div class="col-md-10 d-flex flex-column justify-content-center">
-                    <p>Cập nhật các tin tức mới nhất tại đây.</p>
+        <div class="container p-4"> 
+            <div class="row">
+                <div class="col pb-2">
+                    <div class="container">
+                        <div class="row banner-body pt-4 pb-4">
+                            <div class="col body">
+                                <a href="javascript:void(0)">Tin mới</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="carousel">
-                <div class="m-2">
-                    <div class="card carousel-card border-0" style="background-image: url('https://gamek.mediacdn.vn/thumb_w/640/133514250583805952/2021/10/14/-16341882361001574419649.jpg');">
-                        <div class="card-header border-0">
-                            <div class="tag">
+                <div class="col carousel-card">
+                    <div class="row">
+                        <img src="https://gamek.mediacdn.vn/zoom/310_200/133514250583805952/2021/10/22/unnamed-163490199497760170220.png" alt="" class="img-fluid w-100">
+                        <div class="tag">
+                            <div class="tag-border">
                                 <a href="javascript:void(0)">TIN TỨC</a>
-                            </div> 
+                            </div>
                         </div>
-                        <div class="card-body d-flex flex-column-reverse">
-                            <h3 class="title">HLE có thành tích kém nhất trong số 8 đội Trung - Hàn sau 3 trận vòng bảng CKTG, cộng đồng LCK chỉ ra nguyên nhân chính</h3>
-                            <span>December 19, 2021</span>
+                        <div class="body">
+                            <div class="title">
+                                <p>Vòng loại Tứ Kết CKTG 2021 đáng mong chờ - Những cuộc "hội ngộ" đầy duyên nợ của làng LMHT thế giới</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="m-2">
-                    <div class="card carousel-card border-0" style="background-image: url('https://themebeyond.com/html/geco/Geco/img/slider/banner_magazine_thumb02.jpg');">
-                        <div class="card-header border-0">
-                            <div class="tag">
+                <div class="col carousel-card">
+                    <div class="row">
+                        <img src="https://gamek.mediacdn.vn/zoom/310_200/133514250583805952/2021/10/22/avata-1634890511559889272864.png" alt="" class="img-fluid w-100">
+                        <div class="tag">
+                            <div class="tag-border">
                                 <a href="javascript:void(0)">TIN TỨC</a>
-                            </div> 
+                            </div>
                         </div>
-                        <div class="card-body d-flex flex-column-reverse">
-                            <h3 class="title">Tội ác, mất cả cuộc đời và những hiểm họa tiềm tàng cho việc cày game thâu đêm nhiều giờ, người chơi nên tránh (p2)</h3>
-                            <span>December 19, 2021</span>
+                        <div class="body">
+                            <div class="title">
+                                <p>Dragon Ball Super 77: Các Cerealians dùng lại tuyệt chiêu cũ của Piccolo đối phó với người Saiyan, tuy đơn giản nhưng hiệu quả</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="m-2">
-                    <div class="card carousel-card border-0" style="background-image: url('https://gamek.mediacdn.vn/thumb_w/640/133514250583805952/2021/10/14/photo-1-1634203125121351536114.jpg');">
-                        <div class="card-header border-0">
-                            <div class="tag">
+                <div class="col carousel-card">
+                    <div class="row">
+                        <img src="https://gamek.mediacdn.vn/zoom/310_200/133514250583805952/2021/10/22/smk-faker-4-1634890440544393356765.jpg" alt="" class="img-fluid w-100">
+                        <div class="tag">
+                            <div class="tag-border">
                                 <a href="javascript:void(0)">TIN TỨC</a>
-                            </div> 
+                            </div>
                         </div>
-                        <div class="card-body d-flex flex-column-reverse">
-                            <h3 class="title">Hé lộ nguyên nhân vì sao EA sắp đóng cửa dòng game FIFA</h3>
-                            <span>December 19, 2021</span>
+                        <div class="body">
+                            <div class="title">
+                                <p>Sau Faker, ShowMaker trở thành tuyển thủ LMHT thứ 2 được bầu chọn "top 100 người có sức ảnh hưởng nhất" tại Hàn Quốc</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="m-2">
-                    <div class="card carousel-card border-0" style="background-image: url('https://gamek.mediacdn.vn/thumb_w/640/133514250583805952/2021/10/14/photo-1-16341893989511995487389.jpg');">
-                        <div class="card-header border-0">
-                            <div class="tag">
+                <div class="col carousel-card">
+                    <div class="row">
+                        <img src="https://gamek.mediacdn.vn/zoom/310_200/133514250583805952/2021/10/22/photo-8-1634892743655252901225.jpg" alt="" class="img-fluid w-100">
+                        <div class="tag">
+                            <div class="tag-border">
                                 <a href="javascript:void(0)">TIN TỨC</a>
-                            </div> 
+                            </div>
                         </div>
-                        <div class="card-body d-flex flex-column-reverse">
-                            <h3 class="title">Blizzard tự mình hủy hoại cái tên Diablo II huyền thoại vì thất hứa trong việc sửa lỗi bản Resurrected</h3>
-                            <span>December 19, 2021</span>
+                        <div class="body">
+                            <div class="title">
+                                <p>Top 10 nữ chính mạnh mẽ và đầy quyến rũ trong thế giới game</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -180,7 +152,8 @@
                         </div>
                     </div>          
                     <div class="row">
-                        <div class="col-md-6 card-left" style="background-image: url('https://themebeyond.com/html/geco/Geco/img/blog/trand_news_thumb01.jpg');">
+                        <div class="col-md-6 card-left">
+                            <img src="https://themebeyond.com/html/geco/Geco/img/blog/trand_news_thumb01.jpg" alt="" class="card-left-image">
                             <div class="card-left-content pb-5">
                                 <div class="card-tag">
                                     <a href="">SỰ KIỆN</a>    
@@ -195,70 +168,86 @@
                         </div>
                             <div class="col-md-6">
                                 <div class="trending-new-slick">
-                                    <div class="row card-right d-flex p-2">
-                                        <div class="col-md-4">
-                                            <img src="https://themebeyond.com/html/geco/Geco/img/blog/trand_news_thumb03.jpg" alt="">
+                                    <div class="row card-right d-flex">
+                                        <div class="col card-right-content">
+                                            <img src="https://gamek.mediacdn.vn/zoom/310_200/133514250583805952/2021/10/23/base64-1634958678815888943834.png" alt="" class="card-right-img"> 
+                                            <div class="card-right-body">
+                                                <div class="card-tag">
+                                                    <a href="">SỰ KIỆN</a>    
+                                                </div>
+                                                <div class="card-right-date">
+                                                    <h6>24/10/2021</h6>
+                                                </div>
+                                                <div class="card-right-title">
+                                                    <a href="">"Trút giận" lên Cerberus Esports, Xuân Bách hé lộ nguyên nhân quan trọng trong chiến thắng của Team Flash</a>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="card-right-content col-md-8">
-                                            <div class="card-tag">
-                                                <a href="">SỰ KIỆN</a>    
+                                    </div>    
+                                    <div class="row card-right d-flex flex-column justify-content-space-between">
+                                        <div class="col card-right-content">
+                                            <img src="https://gamek.mediacdn.vn/zoom/310_200/133514250583805952/2021/10/23/base64-1634958678815888943834.png" alt="" class="card-right-img"> 
+                                            <div class="card-right-body">
+                                                <div class="card-tag">
+                                                    <a href="">SỰ KIỆN</a>    
+                                                </div>
+                                                <div class="card-right-date">
+                                                    <h6>24/10/2021</h6>
+                                                </div>
+                                                <div class="card-right-title">
+                                                    <a href="">"Trút giận" lên Cerberus Esports, Xuân Bách hé lộ nguyên nhân quan trọng trong chiến thắng của Team Flash</a>
+                                                </div>
                                             </div>
-                                            <div class="card-right-date">
-                                                <h6>December 19, 2021</h6>
-                                            </div>
-                                            <div class="card-right-title">
-                                                <a href="">Mark Sniper sell House where he Killed</a>
-                                            </div>
-                                        </div>                               
-                                    </div>
-                                    <div class="row card-right d-flex p-2">
-                                        <div class="col-md-4">
-                                            <img src="https://themebeyond.com/html/geco/Geco/img/blog/trand_news_thumb02.jpg" alt="">
                                         </div>
-                                        <div class="card-right-content col-md-8">
-                                            <div class="card-tag">
-                                                <a href="">SỰ KIỆN</a>    
+                                    </div>   
+                                    <div class="row card-right d-flex">
+                                        <div class="col card-right-content">
+                                            <img src="https://gamek.mediacdn.vn/zoom/310_200/133514250583805952/2021/10/23/base64-1634958678815888943834.png" alt="" class="card-right-img"> 
+                                            <div class="card-right-body">
+                                                <div class="card-tag">
+                                                    <a href="">SỰ KIỆN</a>    
+                                                </div>
+                                                <div class="card-right-date">
+                                                    <h6>24/10/2021</h6>
+                                                </div>
+                                                <div class="card-right-title">
+                                                    <a href="">"Trút giận" lên Cerberus Esports, Xuân Bách hé lộ nguyên nhân quan trọng trong chiến thắng của Team Flash</a>
+                                                </div>
                                             </div>
-                                            <div class="card-right-date">
-                                                <h6>December 19, 2021</h6>
-                                            </div>
-                                            <div class="card-right-title">
-                                                <a href="">Mark Sniper sell House where he Killed</a>
-                                            </div>
-                                        </div>                               
-                                    </div>
-                                    <div class="row card-right d-flex p-2">
-                                        <div class="col-md-4">
-                                            <img src="https://themebeyond.com/html/geco/Geco/img/blog/trand_news_thumb04.jpg" alt="">
                                         </div>
-                                        <div class="card-right-content col-md-8">
-                                            <div class="card-tag">
-                                                <a href="">SỰ KIỆN</a>    
+                                    </div>   
+                                    <div class="row card-right d-flex">
+                                        <div class="col card-right-content">
+                                            <img src="https://gamek.mediacdn.vn/zoom/310_200/133514250583805952/2021/10/23/base64-1634958678815888943834.png" alt="" class="card-right-img"> 
+                                            <div class="card-right-body">
+                                                <div class="card-tag">
+                                                    <a href="">SỰ KIỆN</a>    
+                                                </div>
+                                                <div class="card-right-date">
+                                                    <h6>24/10/2021</h6>
+                                                </div>
+                                                <div class="card-right-title">
+                                                    <a href="">"Trút giận" lên Cerberus Esports, Xuân Bách hé lộ nguyên nhân quan trọng trong chiến thắng của Team Flash</a>
+                                                </div>
                                             </div>
-                                            <div class="card-right-date">
-                                                <h6>December 19, 2021</h6>
-                                            </div>
-                                            <div class="card-right-title">
-                                                <a href="">Mark Sniper sell House where he Killed</a>
-                                            </div>
-                                        </div>                               
-                                    </div>
-                                    <div class="row card-right d-flex p-2">
-                                        <div class="col-md-4">
-                                            <img src="https://themebeyond.com/html/geco/Geco/img/blog/trand_news_thumb04.jpg" alt="">
                                         </div>
-                                        <div class="card-right-content col-md-8">
-                                            <div class="card-tag">
-                                                <a href="">SỰ KIỆN</a>    
+                                    </div>   
+                                    <div class="row card-right d-flex">
+                                        <div class="col card-right-content">
+                                            <img src="https://gamek.mediacdn.vn/zoom/310_200/133514250583805952/2021/10/23/base64-1634958678815888943834.png" alt="" class="card-right-img"> 
+                                            <div class="card-right-body">
+                                                <div class="card-tag">
+                                                    <a href="">SỰ KIỆN</a>    
+                                                </div>
+                                                <div class="card-right-date">
+                                                    <h6>24/10/2021</h6>
+                                                </div>
+                                                <div class="card-right-title">
+                                                    <a href="">"Trút giận" lên Cerberus Esports, Xuân Bách hé lộ nguyên nhân quan trọng trong chiến thắng của Team Flash</a>
+                                                </div>
                                             </div>
-                                            <div class="card-right-date">
-                                                <h6>December 19, 2021</h6>
-                                            </div>
-                                            <div class="card-right-title">
-                                                <a href="">Mark Sniper sell House where he Killed</a>
-                                            </div>
-                                        </div>                               
-                                    </div>
+                                        </div>
+                                    </div>   
                                 </div>
                             </div>
                         </div>
@@ -295,18 +284,26 @@
                 </div>  
                 <div class="row">
                     <div class="col-md-8 video-left">
-                        <img src="https://themebeyond.com/html/geco/Geco/img/images/stream_thumb01.jpg" alt="">
+                        <img src="https://gamek.mediacdn.vn/zoom/399_262/133514250583805952/2021/10/23/aliens-fireteam-elite-xenomorph-combat-moments-1-16349681618861913819984.jpg" alt="" class="thumb">
+                        <a href="">
+                            <img src="https://themebeyond.com/html/geco/Geco/img/icon/w_play.png" alt="" class="btn-play">
+                        </a>
                     </div>
                     <div class="col-md-4 video-right">
                         <div class="row">
-                            <div class="video-right-card pb-3">
-                            <img src="https://themebeyond.com/html/geco/Geco/img/images/stream_thumb02.jpg" alt="">
-                        </div>
-                        <div class="video-right-card pb-3">
-                            <img src="https://themebeyond.com/html/geco/Geco/img/images/stream_thumb03.jpg" alt="">
-                        </div>
-                        </div>
-                        
+                            <div class="col video-right-card pb-3 pl-3">
+                                <img src="https://themebeyond.com/html/geco/Geco/img/images/stream_thumb02.jpg" alt="" class="thumb">
+                                <a href="">
+                                    <img src="https://themebeyond.com/html/geco/Geco/img/icon/w_play.png" alt="" class="btn-play">
+                                </a>
+                            </div>
+                            <div class="col video-right-card pb-3 pl-3">
+                                <img src="https://themebeyond.com/html/geco/Geco/img/images/stream_thumb03.jpg" alt="" class="thumb">
+                                <a href="">
+                                    <img src="https://themebeyond.com/html/geco/Geco/img/icon/w_play.png" alt="" class="btn-play">
+                                </a>
+                            </div>
+                        </div>   
                     </div>
                 </div>
             </div>
@@ -321,7 +318,66 @@
                         <h4>Tin tức</h4>
                     </div>
                 </div>
-                <div class="col-md-12">
+                <div class="row">
+                    <div class="col">
+                        <div class="card-latest-news d-flex">
+                            <img src="https://themebeyond.com/html/geco/Geco/img/blog/lgn_thumb01.jpg" alt="">
+                            <div class="right">
+                                <div class="card-tag">
+                                    <a href="">SỰ KIỆN</a>    
+                                </div>
+                                <div class="date">
+                                    <span>DECEMBER 19, 2021</span>
+                                </div>
+                                <div class="title">
+                                    <a href=""><h1>Director of nation intelligence Trump ignored</h1></a>
+                                </div>
+                                <div class="content">
+                                    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card-latest-news d-flex">
+                            <img src="https://themebeyond.com/html/geco/Geco/img/blog/lgn_thumb01.jpg" alt="">
+                            <div class="right">
+                                <div class="card-tag">
+                                    <a href="">SỰ KIỆN</a>    
+                                </div>
+                                <div class="date">
+                                    <span>DECEMBER 19, 2021</span>
+                                </div>
+                                <div class="title">
+                                    <a href=""><h1>Director of nation intelligence Trump ignored</h1></a>
+                                </div>
+                                <div class="content">
+                                    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card-latest-news d-flex">
+                            <img src="https://themebeyond.com/html/geco/Geco/img/blog/lgn_thumb01.jpg" alt="">
+                            <div class="right">
+                                <div class="card-tag">
+                                    <a href="">SỰ KIỆN</a>    
+                                </div>
+                                <div class="date">
+                                    <span>DECEMBER 19, 2021</span>
+                                </div>
+                                <div class="title">
+                                    <a href=""><h1>Director of nation intelligence Trump ignored</h1></a>
+                                </div>
+                                <div class="content">
+                                    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{-- <div class="col-md-12">
                     <div class="card-latest-news d-flex">
                         <img src="https://themebeyond.com/html/geco/Geco/img/blog/lgn_thumb01.jpg" alt="">
                         <div class="right">
@@ -373,11 +429,42 @@
                             </div>
                         </div>
                     </div>
-               </div>
+               </div> --}}
                <div class="col-md-12 d-flex justify-content-center">
                    <a class="btn-more" href="">Xem thêm</a>
                </div>
                
+            </div>
+        </div>
+    </div>
+    {{-- Footer --}}
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col footer-logo d-flex justify-content-center">
+                    <h2>LOGO</h2>
+                </div>
+            </div>
+            <div class="row footer-menu d-flex justify-content-center">  
+                <ul>
+                    <li class="border-right"><a href="">Trang chủ</a></li>
+                    <li class="border-right"><a href="">Tin tức</a></li>
+                    <li class="border-right"><a href="">Sự kiện</a></li>
+                    <li><a href="">Video</a></li>
+                </ul>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="title-social">
+                    <p>FOLLOW</p>
+                </div>
+            </div>
+            <div class="row footer-social d-flex justify-content-center">
+                <div class="social-btns pb-4">
+                    <a class="btn facebook" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a class="btn google" href="#"><i class="fa fa-google" aria-hidden="true"></i></a>
+                    <a class="btn linkedin" href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a class="btn instagram" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
             </div>
         </div>
     </div>
@@ -413,96 +500,7 @@
     slidesToScroll: 1,
     arrows: true,
     vertical: true,
-    // verticalSwiping: true,
     prevArrow: '.slick-prev',
     nextArrow: '.slick-next',
-
     });
-	
 </script>
-<script>
-    $(window).scroll(function(){
-        if ($(this).scrollTop() > 100) {
-            $('#nav-sticky').removeClass('navbar-hide');
-        } 
-        else{
-            $('#nav-sticky').addClass('navbar-hide');
-        }
-    });
-
-</script>
-<script>
-    $(".btn-search").click(function(){
-      $(".wrapper").addClass("active");
-    //   $(this).css("display", "none");
-      $(".search-data").fadeIn(500);
-      $(".close-btn").fadeIn(500);
-      $(".search-data .line").addClass("active");
-      setTimeout(function(){
-        $("input").focus();
-        $(".search-data label").fadeIn(500);
-        $(".search-data span").fadeIn(500);
-      }, 800);
-    });
-    
-    $(".wrapper").click(function(){
-      $(".wrapper").removeClass("active");
-      $(".search-btn").fadeIn(800);
-      $(".search-data").fadeOut(500);
-      $(".search-data .line").removeClass("active");
-      $("input").val("");
-      $(".search-data label").fadeOut(500);
-      $(".search-data span").fadeOut(500);
-    });
- </script>
- <script>
-     $(".btn-search").click(function(){
-        disableScroll();
-     });
-     $(".wrapper").click(function(){
-        enableScroll();
-     });
-
-    // left: 37, up: 38, right: 39, down: 40,
-    // spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
-    var keys = {37: 1, 38: 1, 39: 1, 40: 1};
-
-    function preventDefault(e) {
-    e.preventDefault();
-    }
-
-    function preventDefaultForScrollKeys(e) {
-        if (keys[e.keyCode]) {
-            preventDefault(e);
-            return false;
-        }
-    }
-
-    // modern Chrome requires { passive: false } when adding event
-    var supportsPassive = false;
-    try {
-    window.addEventListener("test", null, Object.defineProperty({}, 'passive', {
-        get: function () { supportsPassive = true; } 
-    }));
-    } catch(e) {}
-
-    var wheelOpt = supportsPassive ? { passive: false } : false;
-    var wheelEvent = 'onwheel' in document.createElement('div') ? 'wheel' : 'mousewheel';
-
-    // call this to Disable
-    function disableScroll() {
-    window.addEventListener('DOMMouseScroll', preventDefault, false); // older FF
-    window.addEventListener(wheelEvent, preventDefault, wheelOpt); // modern desktop
-    window.addEventListener('touchmove', preventDefault, wheelOpt); // mobile
-    window.addEventListener('keydown', preventDefaultForScrollKeys, false);
-    }
-
-    // call this to Enable
-    function enableScroll() {
-    window.removeEventListener('DOMMouseScroll', preventDefault, false);
-    window.removeEventListener(wheelEvent, preventDefault, wheelOpt); 
-    window.removeEventListener('touchmove', preventDefault, wheelOpt);
-    window.removeEventListener('keydown', preventDefaultForScrollKeys, false);
-    }
- </script>
-</html>
