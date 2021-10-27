@@ -492,13 +492,7 @@ nav ul {
     font-weight: bold;
 }
 
-
-/* 
-.post-detail ul {
-    margin: 0;
+.news {
+    background-color: #252525;
+    height: auto;
 }
-
-.post-detail ul li {
-    padding-right: 1em;
-    margin: 1em 0;
-} */

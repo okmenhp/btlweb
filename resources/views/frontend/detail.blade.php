@@ -87,8 +87,7 @@
                 <p>Tuy nhiên sau đó, trong một phiên bản nâng cấp, AN94 Scope bất ngờ bị giảm sức mạnh đáng kể khi "tụt" mất 5 viên trong số băng đạn tối đa có thể chứa. Một số lý do được đưa ra từ phía NPH như để cân bằng game, thông tin không khớp... đều trở nên vô nghĩa trong mắt các game thủ. Sau cùng, AN94 Scope đã được trả lại sức mạnh vốn có.</p>
             </div>
         </div>
-    </div>
-    
+    </div>  
     {{-- Footer --}}
     <div class="footer">
         <div class="container">
