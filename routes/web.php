@@ -17,12 +17,11 @@ Route::get('/', function () {
     return view('frontend/homepage');
 });
 
-// Route::get('/admin', function () {
-//     return view('/backend/dashboard');
-// });
-
-Route::get('/admin', function () {
-    return view('/backend/dashboard');
-})->middleware(['auth'])->name('dashboard');
+Route::middleware(['auth'])->group(function(){
+    Route::prefix('admin')->group(function(){
+        Route::get('/', 'Backend\DashboardController@index');
+        Route::post('/articles/insert', 'Backend\CKeditorController@fileUpload')->name('admin.articles.upload');
+    });
+});
 
 require __DIR__.'/auth.php';
