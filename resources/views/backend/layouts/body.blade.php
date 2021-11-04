@@ -5,9 +5,13 @@
     </div>
     <div class="mid-body">
         <form action="" method="post">
-            <div class="selection d-flex">
+            <div class="selection">
+                <div class="title d-flex ">
+                    <p class="">Tiêu đề: </p>
+                    <input type="text" style="width: 40em">
+                </div>
                 <div class="type d-flex ">
-                    <p class="">Sự ưu tiên: </p>
+                    <p class="">Ưu tiên: </p>
                     <input type="text" style="width: 4em">
                 </div>
                 <div class="tag d-flex ">
@@ -23,5 +27,8 @@
     </div>
 </div>
 <script>
-    CKEDITOR.replace( 'editor1' );
+    CKEDITOR.replace( 'editor1', {
+        filebrowserUploadUrl: "{{route('admin.articles.upload', ['_token' => csrf_token() ])}}",
+        filebrowserUploadMethod: 'form'
+    } );
 </script>
