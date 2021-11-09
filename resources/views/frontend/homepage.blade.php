@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/bootstrap.min.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/style.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/font-awesome.min.css') }}">
-
+    {{-- <link rel="stylesheet" href="{{ asset('assets/ionicons/ionicons.min.css') }}"> --}}
     <script src="{{ asset('assets/js/jquery.min.js') }}"></script>
 
 
@@ -30,6 +30,7 @@
 </head>
 
 <body>
+    <a id="button"></a>
     <!-- Navigation -->
     <nav>
         <div class="container">
@@ -147,7 +148,7 @@
                         <div class="tag">
                             <a href="">Sự kiện</a>
                         </div>
-                        <img src="https://unsplash.it/350/250?image=765">
+                        <img src="https://cdn.vn.garenanow.com/web/lol-product/home/images/Lan_h3lpm3/10_2021/Quan/CKTG/ava-vongbang-ngay5.jpg">
                         <div class="col news-title">
                             <a href="">
                                 <p>Lạnh gáy với game ma Thái Lan Home Sweet Home, chơi thử miễn phí trên Steam</p>
@@ -160,7 +161,7 @@
                         <div class="tag">
                             <a href="">Sự kiện</a>
                         </div>
-                        <img src="https://unsplash.it/350/250?image=764">
+                        <img src="https://cdn.vn.garenanow.com/web/lol-product/home/images/Lan_h3lpm3/10_2021/Quan/CKTG/ava-vongbang-ngay5.jpg">
                         <div class="col news-title">
                             <a href="">
                                 <p>Lạnh gáy với game ma Thái Lan Home Sweet Home, chơi thử miễn phí trên Steam</p>
@@ -173,7 +174,7 @@
                         <div class="tag">
                             <a href="">Sự kiện</a>
                         </div>
-                        <img src="https://unsplash.it/350/250?image=780">
+                        <img src="https://cdn.vn.garenanow.com/web/lol-product/home/images/Lan_h3lpm3/10_2021/Quan/CKTG/ava-vongbang-ngay5.jpg">
                         <div class="col news-title">
                             <a href="">
                                 <p>Lạnh gáy với game ma Thái Lan Home Sweet Home, chơi thử miễn phí trên Steam</p>
@@ -313,10 +314,14 @@
                     <div class="row">
                         <div class="col-md-8 p-1">
                             <div class="videos">
-                                <a class="play" video-url="https://www.youtube.com/watch?v=oQnfcVqHswg">
+                                <a class="play" video-url="https://www.youtube.com/watch?v=6hIfBSJGdqA">
                                     <i class="fa fa-play-circle"></i>
                                 </a>
-                                <img src="https://cdngarenanow-a.akamaihd.net/webmain/static/pss/lol/items_splash/jarvaniv_0.jpg" alt="" />
+                                
+                                <div class="videos-body">
+                                    <img src="https://img.game-news24.com/2021/10/LOL-Arcane-Jayce-and-Vi-Skins-Patch-11-23-PBE-Revealed-patch-11-23.jpeg" alt="" />
+                                    <a class="title">Akali bất ngờ được tăng sức mạnh, trang phục Arcane và Vinh Quang | Tổng quan Cập nhật 11.22</a>
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -325,7 +330,8 @@
                                     <a class="play" video-url="https://www.youtube.com/watch?v=oQnfcVqHswg">
                                         <i class="fa fa-play-circle"></i>
                                     </a>
-                                    <img src="https://cdngarenanow-a.akamaihd.net/webmain/static/pss/lol/items_splash/irelia_0.jpg" alt="" />
+                                    <a class="title">Hé lộ nhóm trang phục Tiệm Trà Ngọt Ngào: Annie, Bard, Gwen, Sivir, Soraka, và Vladimir</a>
+                                    <img src="https://img.youtube.com/vi/am2RJMTa8TE/maxresdefault.jpg" alt="" />
                                 </div>
                             </div>
                             <div class="row video-secondary">
@@ -333,7 +339,8 @@
                                     <a class="play" video-url="https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0039/ability_0039_P1.mp4">
                                         <i class="fa fa-play-circle"></i>
                                     </a>
-                                    <img src="https://cdngarenanow-a.akamaihd.net/webmain/static/pss/lol/items_splash/irelia_0.jpg" alt="" />
+                                    <a class="title">Hé lộ nhóm trang phục Tiệm Trà Ngọt Ngào: Annie, Bard, Gwen, Sivir, Soraka, và Vladimir</a>
+                                    <img src="https://i.ytimg.com/vi/0To4-goyZ-M/maxresdefault.jpg" alt="" />
                                 </div>
                             </div>
                         </div>
@@ -370,11 +377,7 @@
                                         </a>
                                     </div>
                                     <div class="content">
-                                        <p style=" overflow: hidden;
-                                        
-                                        display: -webkit-box;
-                                        -webkit-line-clamp: 5;
-                                        -webkit-box-orient: vertical;">Ngày Phán Quyết đã đến hồi kết, và cũng đã đến lúc chúng ta nói lời tạm biệt với những Trang Bị Ánh Sáng cũng như Thần Linh Ban Phước. Cùng lúc đó, chúng ta cũng sẽ chào đón một cơ chế mới chuẩn bị xuất hiện trong mùa
+                                        <p>Ngày Phán Quyết đã đến hồi kết, và cũng đã đến lúc chúng ta nói lời tạm biệt với những Trang Bị Ánh Sáng cũng như Thần Linh Ban Phước. Cùng lúc đó, chúng ta cũng sẽ chào đón một cơ chế mới chuẩn bị xuất hiện trong mùa
                                             giải Thời Đại Công Nghệ. Các Nâng Cấp Hextech sẽ biến bạn trở thành những nhà khoa học đích thực, khi bạn sẽ có thể phá bỏ các giới hạn cũng như tạo ra những giới hạn mới với nó. Cùng tìm hiểu nhé! Dài Quá; Ngại
                                             Đọc</p>
                                     </div>
@@ -393,15 +396,11 @@
                                     </div>
                                     <div class="title">
                                         <a href="">
-                                            <p style="font-size:20px;">Tổng quan Cơ chế của Thời Đại Công Nghệ: Nâng Cấp Hextech</p>
+                                            <p>Tổng quan Cơ chế của Thời Đại Công Nghệ: Nâng Cấp Hextech</p>
                                         </a>
                                     </div>
                                     <div class="content">
-                                        <p style=" overflow: hidden;
-                                        
-                                        display: -webkit-box;
-                                        -webkit-line-clamp: 5;
-                                        -webkit-box-orient: vertical;">Từ 00:30 ngày 29/10/2021 đến đúng 23:59 ngày 04/11/2021, khi quy đổi RP tới mốc của chương trình, bạn sẽ nhận MIỄN PHÍ báu vật Chiến Binh Rồng 2021 cực kỳ hấp dẫn cùng một lượng RP giá trị!</p>
+                                        <p>Từ 00:30 ngày 29/10/2021 đến đúng 23:59 ngày 04/11/2021, khi quy đổi RP tới mốc của chương trình, bạn sẽ nhận MIỄN PHÍ báu vật Chiến Binh Rồng 2021 cực kỳ hấp dẫn cùng một lượng RP giá trị!</p>
                                     </div>
                                     <p>31/10/2021</p>
                                 </div>
@@ -418,15 +417,11 @@
                                     </div>
                                     <div class="title">
                                         <a href="">
-                                            <p style="font-size:20px;">Tổng quan Cơ chế của Thời Đại Công Nghệ: Nâng Cấp Hextech</p>
+                                            <p>Tổng quan Cơ chế của Thời Đại Công Nghệ: Nâng Cấp Hextech</p>
                                         </a>
                                     </div>
                                     <div class="content">
-                                        <p style=" overflow: hidden;
-                                        
-                                        display: -webkit-box;
-                                        -webkit-line-clamp: 5;
-                                        -webkit-box-orient: vertical;">Từ 00:30 ngày 29/10/2021 đến đúng 23:59 ngày 04/11/2021, khi quy đổi RP tới mốc của chương trình, bạn sẽ nhận MIỄN PHÍ báu vật Chiến Binh Rồng 2021 cực kỳ hấp dẫn cùng một lượng RP giá trị!</p>
+                                        <p>Từ 00:30 ngày 29/10/2021 đến đúng 23:59 ngày 04/11/2021, khi quy đổi RP tới mốc của chương trình, bạn sẽ nhận MIỄN PHÍ báu vật Chiến Binh Rồng 2021 cực kỳ hấp dẫn cùng một lượng RP giá trị!</p>
                                     </div>
                                     <p>31/10/2021</p>
                                 </div>
@@ -435,12 +430,36 @@
                     </div>
                 </div>
             </div>
+            <div class="row button-view-more">
+                <a href="#" class="btn-more">Xem thêm</a>
+            </div>
+            
         </div>
     </div>
     <!-- End Latest News -->
 
     <!-- Footer -->
-
+    <footer class="footer">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12 text-center">
+                    <h2 class="footer-heading"><a href="#" class="logo">Logo</a></h2>
+                    <p class="menu">
+                        <a href="#">Trang chủ</a>
+                        <a href="#">Game</a>
+                        <a href="#">Video</a>
+                        <a href="#">Tin tức</a>
+                        <a href="#">Liên hệ</a>
+                    </p>
+                    <ul class="ftco-footer-social p-0">
+                        <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></span></a></li>
+                        <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook-f"></i></a></li>
+                        <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Youtube"><i class="fa fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
     <!-- End Footer -->
 </body>
 
@@ -453,12 +472,12 @@
 </script>
 <script>
     $('.slider-responsive').slick({
-        dots: false,
+        dots: true,
         infinite: true,
         prevArrow: null,
         nextArrow: null,
         autoplay: true,
-        speed: 300,
+        speed: 600,
         slidesToShow: 3,
         slidesToScroll: 1,
         responsive: [{
@@ -486,4 +505,21 @@
 </script>
 <script>
     $(".play").videoPopup();
+</script>
+<script>
+    var btn = $('#button');
+    $(window).scroll(function() {
+    if ($(window).scrollTop() > 300) {
+        btn.addClass('show');
+    } else {
+        btn.removeClass('show');
+    }
+    });
+
+    btn.on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({scrollTop:0}, '300');
+    });
+
+
 </script>
