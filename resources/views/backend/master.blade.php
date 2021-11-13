@@ -17,7 +17,8 @@
         @include('backend.layouts.sidebar')
         <div class="right">
             @include('backend.layouts.header')
-            @include('backend.layouts.body')
+            {{-- @include('backend.layouts.body') --}}
+            @yield('content')
         </div>
     </div>
 
