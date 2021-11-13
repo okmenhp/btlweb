@@ -17,6 +17,13 @@ Route::get('/', function () {
     return view('frontend/homepage');
 });
 
+Route::get('/news', function () {
+    return view('frontend/news');
+});
+
+Route::get('/videos', function () {
+    return view('frontend/detail');
+});
 Route::middleware(['auth'])->group(function(){
     Route::prefix('admin')->group(function(){
         Route::get('/', 'Backend\DashboardController@index');
