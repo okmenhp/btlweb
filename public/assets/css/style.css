@@ -395,6 +395,19 @@ img:hover {
     padding: 0.25rem;
 }
 
+.card-news .title a {
+    color: #252525;
+    text-decoration: none;
+}
+
+.card-news .title a:hover {
+    color: #bcee0e;
+}
+
+.card-news .date {
+    font-weight: 400;
+}
+
 .card-news img {
     height: 15rem;
 }
@@ -422,6 +435,14 @@ img:hover {
 
 .card-news .body a:hover {
     color: #bcee0e;
+}
+
+.card-news .content p {
+    font-weight: 200;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
 
 .card-news-secondary {
@@ -462,6 +483,7 @@ img:hover {
 
 .card-news-secondary .body .date p {
     color: #525050;
+    font-weight: 200;
 }
 
 .card-news-lot {
@@ -587,6 +609,11 @@ img:hover {
     display: -webkit-box;
     -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
+    font-weight: 200;
+}
+
+.card-latest-new .date {
+    font-weight: 200;
 }
 
 .card-latest-new .title a {
@@ -710,11 +737,8 @@ textarea.form-control {
     margin-bottom: 0;
 }
 
-footer {
-    padding: 2em 0;
-}
-
 .footer {
+    padding: 2em 0;
     background: #121212;
 }
 
@@ -756,4 +780,57 @@ footer {
 .footer .ftco-footer-social li a {
     background: transparent;
     border: 1px solid #bcee0e;
+}
+
+
+/* Breadcrumb */
+
+.breadcrumb {
+    background-color: #f8f8f8;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #252525;
+}
+
+.page-news h4 {
+    padding: 0 1rem;
+    font-weight: 700
+}
+
+.news-right body {
+    word-break: break-all;
+}
+
+.news-right .title a {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    text-decoration: none;
+    color: #252525;
+}
+
+.news-right .title a:hover {
+    color: #bcee0e;
+}
+
+.news-right .date p {
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+}
+
+.title-right h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.title-video {
+    color: #252525;
+}
+
+.title-video a:hover {
+    color: #bcee0e;
 }

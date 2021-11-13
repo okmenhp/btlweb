@@ -381,7 +381,7 @@
                                             giải Thời Đại Công Nghệ. Các Nâng Cấp Hextech sẽ biến bạn trở thành những nhà khoa học đích thực, khi bạn sẽ có thể phá bỏ các giới hạn cũng như tạo ra những giới hạn mới với nó. Cùng tìm hiểu nhé! Dài Quá; Ngại
                                             Đọc</p>
                                     </div>
-                                    <p>31/10/2021</p>
+                                    <p class="date">31/10/2021</p>
                                 </div>
                             </div>
                         </div>
@@ -402,7 +402,7 @@
                                     <div class="content">
                                         <p>Từ 00:30 ngày 29/10/2021 đến đúng 23:59 ngày 04/11/2021, khi quy đổi RP tới mốc của chương trình, bạn sẽ nhận MIỄN PHÍ báu vật Chiến Binh Rồng 2021 cực kỳ hấp dẫn cùng một lượng RP giá trị!</p>
                                     </div>
-                                    <p>31/10/2021</p>
+                                    <p class="date">31/10/2021</p>
                                 </div>
                             </div>
                         </div>
@@ -423,7 +423,7 @@
                                     <div class="content">
                                         <p>Từ 00:30 ngày 29/10/2021 đến đúng 23:59 ngày 04/11/2021, khi quy đổi RP tới mốc của chương trình, bạn sẽ nhận MIỄN PHÍ báu vật Chiến Binh Rồng 2021 cực kỳ hấp dẫn cùng một lượng RP giá trị!</p>
                                     </div>
-                                    <p>31/10/2021</p>
+                                    <p class="date">31/10/2021</p>
                                 </div>
                             </div>
                         </div>
