@@ -22,7 +22,7 @@ Route::get('/news', function () {
 });
 
 Route::get('/videos', function () {
-    return view('frontend/videos');
+    return view('frontend/detail');
 });
 Route::middleware(['auth'])->group(function(){
     Route::prefix('admin')->group(function(){
