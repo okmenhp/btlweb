@@ -106,8 +106,8 @@
                                 <a class="play" video-url="https://www.youtube.com/watch?v=oQnfcVqHswg">
                                     <i class="fa fa-play-circle"></i>
                                 </a>
+                                <a class="titles">Hé lộ nhóm trang phục Tiệm Trà Ngọt Ngào: Annie, Bard, Gwen, Sivir, Soraka, và Vladimir</a>
                                 <img src="https://img.youtube.com/vi/am2RJMTa8TE/maxresdefault.jpg" alt="" />
-                                <a href="" class="title-video">Hé lộ nhóm trang phục Tiệm Trà Ngọt Ngào: Annie, Bard, Gwen, Sivir, Soraka, và Vladimir</a>
                             </div>
                         </div>
                     </div>
@@ -117,8 +117,8 @@
                                 <a class="play" video-url="https://www.youtube.com/watch?v=oQnfcVqHswg">
                                     <i class="fa fa-play-circle"></i>
                                 </a>
+                                <a class="titles">Hé lộ nhóm trang phục Tiệm Trà Ngọt Ngào: Annie, Bard, Gwen, Sivir, Soraka, và Vladimir</a>
                                 <img src="https://img.youtube.com/vi/am2RJMTa8TE/maxresdefault.jpg" alt="" />
-                                <a href="" class="title-video">Hé lộ nhóm trang phục Tiệm Trà Ngọt Ngào: Annie, Bard, Gwen, Sivir, Soraka, và Vladimir</a>
                             </div>
                         </div>
                     </div>
@@ -128,8 +128,8 @@
                                 <a class="play" video-url="https://www.youtube.com/watch?v=oQnfcVqHswg">
                                     <i class="fa fa-play-circle"></i>
                                 </a>
+                                <a class="titles">Hé lộ nhóm trang phục Tiệm Trà Ngọt Ngào: Annie, Bard, Gwen, Sivir, Soraka, và Vladimir</a>
                                 <img src="https://img.youtube.com/vi/am2RJMTa8TE/maxresdefault.jpg" alt="" />
-                                <a href="" class="title-video">Hé lộ nhóm trang phục Tiệm Trà Ngọt Ngào: Annie, Bard, Gwen, Sivir, Soraka, và Vladimir</a>
                             </div>
                         </div>
                     </div>
@@ -139,12 +139,78 @@
                                 <a class="play" video-url="https://www.youtube.com/watch?v=oQnfcVqHswg">
                                     <i class="fa fa-play-circle"></i>
                                 </a>
+                                <a class="titles">Hé lộ nhóm trang phục Tiệm Trà Ngọt Ngào: Annie, Bard, Gwen, Sivir, Soraka, và Vladimir</a>
                                 <img src="https://img.youtube.com/vi/am2RJMTa8TE/maxresdefault.jpg" alt="" />
-                                <a href="" class="title-video">Hé lộ nhóm trang phục Tiệm Trà Ngọt Ngào: Annie, Bard, Gwen, Sivir, Soraka, và Vladimir</a>
                             </div>
                         </div>
                     </div>
-
+                    <div class="col-md-4">
+                        <div class="row video-secondary">
+                            <div class="videos p-1">
+                                <a class="play" video-url="https://www.youtube.com/watch?v=oQnfcVqHswg">
+                                    <i class="fa fa-play-circle"></i>
+                                </a>
+                                <a class="titles">Hé lộ nhóm trang phục Tiệm Trà Ngọt Ngào: Annie, Bard, Gwen, Sivir, Soraka, và Vladimir</a>
+                                <img src="https://img.youtube.com/vi/am2RJMTa8TE/maxresdefault.jpg" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row video-secondary">
+                            <div class="videos p-1">
+                                <a class="play" video-url="https://www.youtube.com/watch?v=oQnfcVqHswg">
+                                    <i class="fa fa-play-circle"></i>
+                                </a>
+                                <a class="titles">Hé lộ nhóm trang phục Tiệm Trà Ngọt Ngào: Annie, Bard, Gwen, Sivir, Soraka, và Vladimir</a>
+                                <img src="https://img.youtube.com/vi/am2RJMTa8TE/maxresdefault.jpg" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row video-secondary">
+                            <div class="videos p-1">
+                                <a class="play" video-url="https://www.youtube.com/watch?v=oQnfcVqHswg">
+                                    <i class="fa fa-play-circle"></i>
+                                </a>
+                                <a class="titles">Hé lộ nhóm trang phục Tiệm Trà Ngọt Ngào: Annie, Bard, Gwen, Sivir, Soraka, và Vladimir</a>
+                                <img src="https://img.youtube.com/vi/am2RJMTa8TE/maxresdefault.jpg" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row video-secondary">
+                            <div class="videos p-1">
+                                <a class="play" video-url="https://www.youtube.com/watch?v=oQnfcVqHswg">
+                                    <i class="fa fa-play-circle"></i>
+                                </a>
+                                <a class="titles">Hé lộ nhóm trang phục Tiệm Trà Ngọt Ngào: Annie, Bard, Gwen, Sivir, Soraka, và Vladimir</a>
+                                <img src="https://img.youtube.com/vi/am2RJMTa8TE/maxresdefault.jpg" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row video-secondary">
+                            <div class="videos p-1">
+                                <a class="play" video-url="https://www.youtube.com/watch?v=oQnfcVqHswg">
+                                    <i class="fa fa-play-circle"></i>
+                                </a>
+                                <a class="titles">Hé lộ nhóm trang phục Tiệm Trà Ngọt Ngào: Annie, Bard, Gwen, Sivir, Soraka, và Vladimir</a>
+                                <img src="https://img.youtube.com/vi/am2RJMTa8TE/maxresdefault.jpg" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row video-secondary">
+                            <div class="videos p-1">
+                                <a class="play" video-url="https://www.youtube.com/watch?v=oQnfcVqHswg">
+                                    <i class="fa fa-play-circle"></i>
+                                </a>
+                                <a class="titles">Hé lộ nhóm trang phục Tiệm Trà Ngọt Ngào: Annie, Bard, Gwen, Sivir, Soraka, và Vladimir</a>
+                                <img src="https://img.youtube.com/vi/am2RJMTa8TE/maxresdefault.jpg" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>

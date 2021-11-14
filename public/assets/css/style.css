@@ -566,6 +566,14 @@ img:hover {
     margin-bottom: 20px;
 }
 
+.video-secondary .titles {
+    position: absolute;
+    bottom: 0;
+    color: #f8f8f8;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
 
 /*  */
 
@@ -787,6 +795,8 @@ textarea.form-control {
 
 .breadcrumb {
     background-color: #f8f8f8;
+    margin: 0;
+    font-size: 16px;
 }
 
 .breadcrumb a {
@@ -832,5 +842,40 @@ textarea.form-control {
 }
 
 .title-video a:hover {
+    color: #bcee0e;
+}
+
+
+/* listgame */
+
+.list-game {
+    display: flex;
+}
+
+.list-game img {
+    box-shadow: 0 0 #bcee0e;
+    transition: 0.5s;
+}
+
+.list-game img:hover {
+    box-shadow: -5px 5px #bcee0e;
+    transform: translate(5px, -5px);
+}
+
+.list-game h3 {
+    font-size: 20px;
+}
+
+.list-game a {
+    text-decoration: none;
+    color: #252525;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    padding-top: 0.5rem;
+}
+
+.list-game a:hover {
     color: #bcee0e;
 }
