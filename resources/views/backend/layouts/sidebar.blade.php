@@ -26,8 +26,8 @@
         <div class="box-extend news-box-extend pl-4 mt-1">
             <div class="py-2 d-flex flex-column">
                 <a href="{{route('admin.game.index')}}" class="pb-2">Tất cả</a>
-                <a href="" class="pb-2">Thêm mới</a>
-                <a href="" class="">Thể loại</a>
+                <a href="{{route('admin.game.create')}}" class="pb-2">Thêm mới</a>
+                <a href="{{route('admin.game.type')}}" class="">Thể loại</a>
             </div>
         </div>
     </div>
@@ -38,9 +38,8 @@
         </div>
         <div class="box-extend news-box-extend pl-4 mt-1">
             <div class="py-2 d-flex flex-column">
-                <a href="" class="pb-2">Tất cả</a>
-                <a href="" class="pb-2">Thêm mới</a>
-                <a href="" class="">Thể loại</a>
+                <a href="{{route('admin.video.index')}}" class="pb-2">Tất cả</a>
+                <a href="{{route('admin.video.create')}}" class="">Thêm mới</a>
             </div>
         </div>
     </div>

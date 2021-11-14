@@ -17,16 +17,31 @@
         </thead>
         <tbody>
             @foreach ($records as $key => $record)
-                <tr>
+                <tr id="id-{!! $record->id !!}">
                     <th scope="row">{{ ++$key }}</th>
                     <td>{!! $record->headline !!}</td>
                     <td>{!! $record->created_at !!}</td>
                     <td><a href="{{ route('admin.articles.edit', ['id' => $record->id]) }}"><ion-icon name="pencil-outline"></ion-icon></a></td>
-                    <td><ion-icon name="trash-outline"></ion-icon></td>
+                    <td><a href="javascript:void(0)" class="delete-btn" data-id="{!! $record->id !!}"><ion-icon name="trash-outline"></ion-icon></a></td>
                 </tr>
             @endforeach
         </tbody>
     </table>
 </div>
+<script>
+    $('.delete-btn').click(function(){
+        let id = $(this).data('id');
 
+        $.ajax({
+            url: '{{route('admin.articles.delete')}}',
+            type: 'get',
+            data: {id: id},
+            success: function(res){
+                $('#id-'+id).remove()
+                alert(res.success)
+                
+            }
+        })
+    })
+</script>
 @stop

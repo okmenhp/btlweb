@@ -11,4 +11,8 @@ class GameType extends Model
 
     protected $table = 'game_type';
     protected $fillable = ['name'];
+
+    public function game(){
+        return $this->belongsToMany('\App\Models\Game', 'game_game_type', 'game_type_id', 'game_id');
+    }
 }

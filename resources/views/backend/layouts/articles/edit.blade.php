@@ -7,8 +7,9 @@
         <p>Tin tức / Chỉnh sửa bài viết</p>
     </div>
     <div class="mid-body">
-        <form action="{{route('admin.articles.store')}}" method="post" enctype="multipart/form-data">
+        <form action="{{route('admin.articles.update')}}" method="post" enctype="multipart/form-data">
             @csrf
+            <input type="text" value="{!! $record->id !!}" name="id" hidden>
             <div class="selection">
                 <div class="title d-flex ">
                     <p class="">Tiêu đề: </p>
@@ -41,7 +42,7 @@
                     <input type="text" style="width: 4em" name="publish_date">
                 </div>
             </div>
-            <button type="submit">Thêm mới</button>
+            <button type="submit">Chỉnh sửa</button>
         </form>
     </div>
 </div>

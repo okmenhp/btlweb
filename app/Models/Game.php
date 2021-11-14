@@ -10,5 +10,9 @@ class Game extends Model
     use HasFactory;
 
     protected $table = 'game';
-    protected $fillable = ['name', 'studio', 'public_date', 'rate', 'review', 'type_id'];
+    protected $fillable = ['game_config_id','name', 'studio', 'public_date', 'rate', 'review', 'photo_url'];
+
+    public function gameType(){
+        return $this->belongsToMany('\App\Models\GameType', 'game_game_type', 'game_id', 'game_type_id');
+    }
 }

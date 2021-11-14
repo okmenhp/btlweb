@@ -5,10 +5,10 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class VideoType extends Model
+class GameGameType extends Model
 {
     use HasFactory;
 
-    protected $table = 'video_type';
-    protected $fillable = ['name'];
+    protected $table = 'game_game_type';
+    protected $fillable = ['game_id', 'game_type_id'];
 }

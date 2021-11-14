@@ -10,5 +10,7 @@ class GameConfig extends Model
     use HasFactory;
 
     protected $table = 'game_config';
-    protected $fillable = ['game_id', 'cpu', 'ram', 'rate', 'vga', 'hard_drive', 'os'];
+    protected $fillable = ['cpu', 'ram', 'rate', 'vga', 'hard_drive', 'os'];
+
+    
 }
