@@ -13,9 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('frontend/homepage');
-});
+Route::get('/', 'Frontend\DashboardController@index');
 
 Route::get('/listgame', function () {
     return view('frontend/listgame');

@@ -10,5 +10,5 @@ class Video extends Model
     use HasFactory;
 
     protected $table = 'videos';
-    protected $fillable = ['tags', 'video_type_id', 'source', 'content'];
+    protected $fillable = ['tags', 'video_type_id', 'source', 'photo_url', 'content'];
 }

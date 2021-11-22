@@ -27,6 +27,31 @@ class VideoController extends Controller
             'source' => $input['source'],
         );
 
+        if($request->hasFile('image')) {
+            //get filename with extension
+            $filenamewithextension = $request->file('image')->getClientOriginalName();
+
+            //get filename without extension
+            $filename = pathinfo($filenamewithextension, PATHINFO_FILENAME);
+
+            //get file extension
+            $extension = $request->file('image')->getClientOriginalExtension();
+
+            //filename to store
+            $filenametostore = $filename.'_'.time().'.'.$extension;
+
+            //Upload File
+            $request->file('image')->move(public_path('uploads/games'), $filenametostore);
+
+            $CKEditorFuncNum = $request->input('CKEditorFuncNum');
+            $url = asset('uploads/games/'.$filenametostore);
+            $msg = 'Image successfully uploaded';
+            $re = "<script>window.parent.CKEDITOR.tools.callFunction($CKEditorFuncNum, '$url', '$msg')</script>";
+            $result['photo_url'] = $filenametostore;
+            // Render HTML output
+            @header('Content-type: text/html; charset=utf-8');
+        }
+
         Video::create($data);
 
         return redirect()->route('admin.video.index')->with('success', 'Thêm mới thành công');
