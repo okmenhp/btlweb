@@ -43,6 +43,7 @@ Route::middleware(['auth'])->group(function(){
             Route::get('/', 'Backend\GameController@index')->name('admin.game.index');
             Route::get('/create', 'Backend\GameController@create')->name('admin.game.create');
             Route::post('/store', 'Backend\GameController@store')->name('admin.game.store');
+            Route::get('/edit', 'Backend\GameController@edit')->name('admin.game.edit');
             Route::post('/update', 'Backend\GameController@update')->name('admin.game.update');
             Route::get('/delete', 'Backend\GameController@delete')->name('admin.game.delete');
             Route::get('/type', 'Backend\GameController@type')->name('admin.game.type');
