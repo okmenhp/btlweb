@@ -94,123 +94,110 @@
         <div class="m-0">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Video</li>
+                <li class="breadcrumb-item active" aria-current="page">Tin tức</li>
             </ol>
         </div>
-        <div class="video">
-            <div class="container">
-                <div class="row m-0">
-                    <div class="col-md-4">
-                        <div class="row video-secondary">
-                            <div class="videos p-1">
-                                <a class="play" video-url="https://www.youtube.com/watch?v=oQnfcVqHswg">
-                                    <i class="fa fa-play-circle"></i>
-                                </a>
-                                <a class="titles">Hé lộ nhóm trang phục Tiệm Trà Ngọt Ngào: Annie, Bard, Gwen, Sivir, Soraka, và Vladimir</a>
-                                <img src="https://img.youtube.com/vi/am2RJMTa8TE/maxresdefault.jpg" alt="" />
+        <div class="row page-news">
+            <div class="col-md-8">
+                <section><h4>Tin tức</h4></section>
+                <div class="container">
+                    <hr>
+                    <div class="container pb-3">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="row video-secondary">
+                                    <div class="videos p-1">
+                                        <a class="play" video-url="https://www.youtube.com/watch?v=oQnfcVqHswg">
+                                            <i class="fa fa-play-circle"></i>
+                                        </a>
+                                        <a class="titles">Hé lộ nhóm trang phục Tiệm Trà Ngọt Ngào: Annie, Bard, Gwen, Sivir, Soraka, và Vladimir</a>
+                                        <img src="https://img.youtube.com/vi/am2RJMTa8TE/maxresdefault.jpg" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row video-secondary">
+                                    <div class="videos p-1">
+                                        <a class="play" video-url="https://www.youtube.com/watch?v=oQnfcVqHswg">
+                                            <i class="fa fa-play-circle"></i>
+                                        </a>
+                                        <a class="titles">Hé lộ nhóm trang phục Tiệm Trà Ngọt Ngào: Annie, Bard, Gwen, Sivir, Soraka, và Vladimir</a>
+                                        <img src="https://img.youtube.com/vi/am2RJMTa8TE/maxresdefault.jpg" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row video-secondary">
+                                    <div class="videos p-1">
+                                        <a class="play" video-url="https://www.youtube.com/watch?v=oQnfcVqHswg">
+                                            <i class="fa fa-play-circle"></i>
+                                        </a>
+                                        <a class="titles">Hé lộ nhóm trang phục Tiệm Trà Ngọt Ngào: Annie, Bard, Gwen, Sivir, Soraka, và Vladimir</a>
+                                        <img src="https://img.youtube.com/vi/am2RJMTa8TE/maxresdefault.jpg" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row video-secondary">
+                                    <div class="videos p-1">
+                                        <a class="play" video-url="https://www.youtube.com/watch?v=oQnfcVqHswg">
+                                            <i class="fa fa-play-circle"></i>
+                                        </a>
+                                        <a class="titles">Hé lộ nhóm trang phục Tiệm Trà Ngọt Ngào: Annie, Bard, Gwen, Sivir, Soraka, và Vladimir</a>
+                                        <img src="https://img.youtube.com/vi/am2RJMTa8TE/maxresdefault.jpg" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row video-secondary">
+                                    <div class="videos p-1">
+                                        <a class="play" video-url="https://www.youtube.com/watch?v=oQnfcVqHswg">
+                                            <i class="fa fa-play-circle"></i>
+                                        </a>
+                                        <a class="titles">Hé lộ nhóm trang phục Tiệm Trà Ngọt Ngào: Annie, Bard, Gwen, Sivir, Soraka, và Vladimir</a>
+                                        <img src="https://img.youtube.com/vi/am2RJMTa8TE/maxresdefault.jpg" alt="" />
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="row video-secondary">
-                            <div class="videos p-1">
-                                <a class="play" video-url="https://www.youtube.com/watch?v=oQnfcVqHswg">
-                                    <i class="fa fa-play-circle"></i>
-                                </a>
-                                <a class="titles">Hé lộ nhóm trang phục Tiệm Trà Ngọt Ngào: Annie, Bard, Gwen, Sivir, Soraka, và Vladimir</a>
-                                <img src="https://img.youtube.com/vi/am2RJMTa8TE/maxresdefault.jpg" alt="" />
+                </div>
+            </div>
+            <div class="col-md-4 pb-1">
+                <div class="container">
+                    <div class="title-right">
+                        <h3>Tin tức mới nhất</h3>
+                    </div>
+                    <hr>
+                    <div class="row news-right">
+                        <div class="col d-flex pb-1">
+                            <img src="https://gamek.mediacdn.vn/zoom/310_200/133514250583805952/2021/10/28/skt-faker-4-1635396754307704855957.png" alt="" style="width:12rem; height:6.5rem">
+                            <div class="body pl-2">
+                                <div class="title">
+                                    <a href="">DK giành chiến thắng nghẹt thở trong "derby LCK", Faker một lần nữa lỡ hẹn với chức vô địch</a>
+                                </div>
+                                <div class="date"><p>31/10/2021</p></div>
+                            </div>
+                        </div>
+                        <div class="col d-flex pb-1">
+                            <img src="https://gamek.mediacdn.vn/zoom/310_200/133514250583805952/2021/10/28/skt-faker-4-1635396754307704855957.png" alt="" style="width:12rem; height:6.5rem">
+                            <div class="body pl-2">
+                                <div class="title">
+                                    <a href="">DK giành chiến thắng nghẹt thở trong "derby LCK", Faker một lần nữa lỡ hẹn với chức vô địch</a>
+                                </div>
+                                <div class="date"><p>31/10/2021</p></div>
+                            </div>
+                        </div>
+                        <div class="col d-flex pb-1">
+                            <img src="https://gamek.mediacdn.vn/zoom/310_200/133514250583805952/2021/10/28/skt-faker-4-1635396754307704855957.png" alt="" style="width:12rem; height:6.5rem">
+                            <div class="body pl-2">
+                                <div class="title">
+                                    <a href="">DK giành chiến thắng nghẹt thở trong "derby LCK", Faker một lần nữa lỡ hẹn với chức vô địch</a>
+                                </div>
+                                <div class="date"><p>31/10/2021</p></div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="row video-secondary">
-                            <div class="videos p-1">
-                                <a class="play" video-url="https://www.youtube.com/watch?v=oQnfcVqHswg">
-                                    <i class="fa fa-play-circle"></i>
-                                </a>
-                                <a class="titles">Hé lộ nhóm trang phục Tiệm Trà Ngọt Ngào: Annie, Bard, Gwen, Sivir, Soraka, và Vladimir</a>
-                                <img src="https://img.youtube.com/vi/am2RJMTa8TE/maxresdefault.jpg" alt="" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="row video-secondary">
-                            <div class="videos p-1">
-                                <a class="play" video-url="https://www.youtube.com/watch?v=oQnfcVqHswg">
-                                    <i class="fa fa-play-circle"></i>
-                                </a>
-                                <a class="titles">Hé lộ nhóm trang phục Tiệm Trà Ngọt Ngào: Annie, Bard, Gwen, Sivir, Soraka, và Vladimir</a>
-                                <img src="https://img.youtube.com/vi/am2RJMTa8TE/maxresdefault.jpg" alt="" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="row video-secondary">
-                            <div class="videos p-1">
-                                <a class="play" video-url="https://www.youtube.com/watch?v=oQnfcVqHswg">
-                                    <i class="fa fa-play-circle"></i>
-                                </a>
-                                <a class="titles">Hé lộ nhóm trang phục Tiệm Trà Ngọt Ngào: Annie, Bard, Gwen, Sivir, Soraka, và Vladimir</a>
-                                <img src="https://img.youtube.com/vi/am2RJMTa8TE/maxresdefault.jpg" alt="" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="row video-secondary">
-                            <div class="videos p-1">
-                                <a class="play" video-url="https://www.youtube.com/watch?v=oQnfcVqHswg">
-                                    <i class="fa fa-play-circle"></i>
-                                </a>
-                                <a class="titles">Hé lộ nhóm trang phục Tiệm Trà Ngọt Ngào: Annie, Bard, Gwen, Sivir, Soraka, và Vladimir</a>
-                                <img src="https://img.youtube.com/vi/am2RJMTa8TE/maxresdefault.jpg" alt="" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="row video-secondary">
-                            <div class="videos p-1">
-                                <a class="play" video-url="https://www.youtube.com/watch?v=oQnfcVqHswg">
-                                    <i class="fa fa-play-circle"></i>
-                                </a>
-                                <a class="titles">Hé lộ nhóm trang phục Tiệm Trà Ngọt Ngào: Annie, Bard, Gwen, Sivir, Soraka, và Vladimir</a>
-                                <img src="https://img.youtube.com/vi/am2RJMTa8TE/maxresdefault.jpg" alt="" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="row video-secondary">
-                            <div class="videos p-1">
-                                <a class="play" video-url="https://www.youtube.com/watch?v=oQnfcVqHswg">
-                                    <i class="fa fa-play-circle"></i>
-                                </a>
-                                <a class="titles">Hé lộ nhóm trang phục Tiệm Trà Ngọt Ngào: Annie, Bard, Gwen, Sivir, Soraka, và Vladimir</a>
-                                <img src="https://img.youtube.com/vi/am2RJMTa8TE/maxresdefault.jpg" alt="" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="row video-secondary">
-                            <div class="videos p-1">
-                                <a class="play" video-url="https://www.youtube.com/watch?v=oQnfcVqHswg">
-                                    <i class="fa fa-play-circle"></i>
-                                </a>
-                                <a class="titles">Hé lộ nhóm trang phục Tiệm Trà Ngọt Ngào: Annie, Bard, Gwen, Sivir, Soraka, và Vladimir</a>
-                                <img src="https://img.youtube.com/vi/am2RJMTa8TE/maxresdefault.jpg" alt="" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="row video-secondary">
-                            <div class="videos p-1">
-                                <a class="play" video-url="https://www.youtube.com/watch?v=oQnfcVqHswg">
-                                    <i class="fa fa-play-circle"></i>
-                                </a>
-                                <a class="titles">Hé lộ nhóm trang phục Tiệm Trà Ngọt Ngào: Annie, Bard, Gwen, Sivir, Soraka, và Vladimir</a>
-                                <img src="https://img.youtube.com/vi/am2RJMTa8TE/maxresdefault.jpg" alt="" />
-                            </div>
-                        </div>
-                    </div>
-                    
                 </div>
             </div>
         </div>

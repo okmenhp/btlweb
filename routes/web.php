@@ -15,13 +15,15 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'Frontend\DashboardController@index');
 
-Route::get('/listgame', function () {
-    return view('frontend/listgame');
+Route::get('/', function () {
+    return view('frontend/news');
 });
 
 Route::get('/videos', function () {
     return view('frontend/videos');
 });
+
+
 Route::middleware(['auth'])->group(function(){
     Route::prefix('admin')->group(function(){
         Route::get('/', 'Backend\DashboardController@index');
