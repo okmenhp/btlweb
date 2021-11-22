@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'Frontend\DashboardController@index');
 
 Route::get('/', function () {
-    return view('frontend/news');
+    return view('frontend/overview');
 });
 
 Route::get('/videos', function () {
