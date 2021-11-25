@@ -10,24 +10,25 @@ class VideoController extends Controller
 {
     public function index(){
         $records = Video::all();
-
+        
         return view('backend.layouts.videos.index', compact('records'));
     }
 
     public function create(){
-
+        
         return view('backend.layouts.videos.create');
     }
 
     public function store(Request $request){
         $input = $request->all();
-
+        // dd($input);
         $data = array(
             'content' => $input['content'],
             'source' => $input['source'],
         );
 
         if($request->hasFile('image')) {
+            // dd('ok');
             //get filename with extension
             $filenamewithextension = $request->file('image')->getClientOriginalName();
 
@@ -41,17 +42,16 @@ class VideoController extends Controller
             $filenametostore = $filename.'_'.time().'.'.$extension;
 
             //Upload File
-            $request->file('image')->move(public_path('uploads/games'), $filenametostore);
+            $request->file('image')->move(public_path('uploads/videos'), $filenametostore);
 
             $CKEditorFuncNum = $request->input('CKEditorFuncNum');
-            $url = asset('uploads/games/'.$filenametostore);
+            $url = asset('uploads/videos/'.$filenametostore);
             $msg = 'Image successfully uploaded';
             $re = "<script>window.parent.CKEDITOR.tools.callFunction($CKEditorFuncNum, '$url', '$msg')</script>";
-            $result['photo_url'] = $filenametostore;
+            $data['photo_url'] = $filenametostore;
             // Render HTML output
             @header('Content-type: text/html; charset=utf-8');
         }
-
         Video::create($data);
 
         return redirect()->route('admin.video.index')->with('success', 'Thêm mới thành công');
