@@ -29,34 +29,18 @@
         <div class="m-0">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Videos</li>
+                <li class="breadcrumb-item active" aria-current="page">Danh sách game</li>
             </ol>
         </div>
-        <div class="row page-news">
-            <div class="col-md-12">
-                <section><h4>Tất cả videos</h4></section>
-                <div class="container">
-                    <hr>
-                    <div class="container pb-3">
-                        <div class="row">
-                            @foreach ($videos as $video)
-                                <div class="col-md-4">
-                                    <div class="row video-secondary d-flex justify-content-center">
-                                        <div class="videos p-1">
-                                            <a class="play" video-url="{!!$video->source!!}">
-                                                <i class="fa fa-play-circle"></i>
-                                            </a>
-                                            <a class="titles" video-url="{!!$video->source!!}">
-                                                <span>{!!$video->content!!}</span>
-                                            </a>
-                                            <img src="{{asset('uploads/videos/'.$video->photo_url)}}" alt="" />
-                                        </div>
-                                    </div>
-                                </div>
-                            @endforeach
-                        </div>
-                    </div>
-                </div>
+        <div class="container pb-2">
+            <h3 class="">Kết quả tìm kiếm game cho: "{{$text_search}}"</h3>
+            <div class="row list-game">
+                @foreach ($games as $record)
+                    <a href="{{route('game.detail', ['id'=>$record->id])}}" class="col-md-3 pt-3 d-flex flex-column">
+                        <img src="{{asset('uploads/games/'. $record->photo_url)}}" alt="" style="height: 12em; object-fit: contain; background: #23262d">
+                        <h3>{{$record->name}}</h3>
+                    </a>
+                @endforeach
             </div>
         </div>
     </div>
@@ -110,7 +94,6 @@
 </script>
 <script>
     $(".play").videoPopup();
-    $(".titles").videoPopup();
 </script>
 <script>
     var btn = $('#button');

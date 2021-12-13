@@ -29,7 +29,7 @@
             </div>
             <div class="description">
                 <p class="">Mô tả: </p>
-                <textarea name="description" cols="100" rows="5">{!! $record->description !!}</textarea>
+                <textarea name="description" cols="100" rows="5"></textarea>
             </div>
             <div class="content">
                 <textarea name="editor1"></textarea>

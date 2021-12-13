@@ -9,7 +9,6 @@
                             <a href="{{route('game.list')}}">Xem tất cả</a>
                             <ion-icon name="arrow-forward-outline" class="text-primary"></ion-icon>
                         </div>
-                        
                     </div>
                 </div>
                 <div class="row">

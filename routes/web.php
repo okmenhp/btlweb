@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'Frontend\DashboardController@index')->name('home');
-
+Route::post('/search', 'Frontend\DashboardController@search')->name('game.search');
 
 Route::get('/list-games', 'Frontend\GameController@index')->name('game.list');
 Route::get('/game-detail', 'Frontend\GameController@detail')->name('game.detail');

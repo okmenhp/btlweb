@@ -24,4 +24,11 @@ class DashboardController extends Controller
 
         return view('frontend.homepage.index', compact('articles', 'tags', 'games', 'video_first', 'videos'));
     }
+
+    public function search(Request $request){
+        $text_search = $request->all()['search_result'];
+
+        $games = Game::where('name','like','%'.$text_search.'%')->get();
+        return view('frontend.game.search_result', compact('games','text_search'));
+    }
 }

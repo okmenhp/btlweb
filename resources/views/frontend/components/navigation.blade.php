@@ -3,7 +3,7 @@
         <nav class="navbar navbar-expand-lg navbar">
             <a class="navbar-brand d-flex align-items-center" href="{{route('home')}}">
                 <img src="{{asset('uploads/vimaru2.png')}}" style="width: 2.5em; height: 2.5em" alt="">
-                <h4 class="ml-2 mb-0">Website giới thiệu game</h4>
+                <h4 class="ml-2 mb-0">Game review</h4>
             </a>
             <button class="navbar-toggler p-0 m-0" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <div id="nav-icon0">
@@ -30,6 +30,13 @@
                         <a class="nav-link" href="{{route('article.list')}}">TIN TỨC</a>
                     </li>
                 </ul>
+                <form action="{{route('game.search')}}" method="post" class="mb-0 ml-4 border-bottom">
+                    @csrf
+                    <input type="text" name="search_result" class="border-0" style="outline: none" placeholder="tìm kiếm game">
+                    <button type="submit" class="bg-white border-0">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </button>
+                </form>
             </div>
         </nav>
     </div>
