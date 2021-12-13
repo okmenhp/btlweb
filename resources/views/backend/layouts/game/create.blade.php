@@ -63,6 +63,10 @@
                     <p class="">Ảnh minh họa: </p>
                     <input type="file" style="width: 40em" name="image">
                 </div>
+                <div class="title d-flex ">
+                    <p class="mr-2">Link tải: </p>
+                    <input type="text" style="width: 15em" name="link">
+                </div>
             </div>
             <p class="">Nhận xét: </p>
             <div class="content">

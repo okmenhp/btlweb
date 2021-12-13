@@ -13,20 +13,21 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'Frontend\DashboardController@index');
+Route::get('/', 'Frontend\DashboardController@index')->name('home');
 
-Route::get('/news', function () {
-    return view('frontend/news');
-});
 
-Route::get('/videos', function () {
-    return view('frontend/videos');
-});
+Route::get('/list-games', 'Frontend\GameController@index')->name('game.list');
+Route::get('/game-detail', 'Frontend\GameController@detail')->name('game.detail');
+
+Route::get('/news', 'Frontend\ArticleController@index')->name('article.list');
+Route::get('/news-detail', 'Frontend\ArticleController@detail')->name('article.detail');
+
+Route::get('/videos', 'Frontend\VideoController@index')->name('video.list');
 
 
 Route::middleware(['auth'])->group(function(){
     Route::prefix('admin')->group(function(){
-        Route::get('/', 'Backend\DashboardController@index');
+        Route::get('/', 'Backend\GameController@index')->name('admin.dashboard');
 
         // articles
         Route::prefix('/articles')->group(function(){

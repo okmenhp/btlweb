@@ -11,12 +11,17 @@ use Illuminate\Http\Request;
 class DashboardController extends Controller
 {
     public function index(){
-        $articles = Article::paginate(5);
+        $articles = Article::paginate(6);
+        $tags = array();
+        foreach($articles as $key => $article){
+            $tags[$key] = explode(',',$article->tags);
+        }
+
         $games = Game::all();
         // video
         $video_first = Video::first();
         $videos = Video::where('id','!=',7)->paginate(2);
 
-        return view('frontend.homepage.index', compact('articles', 'games', 'video_first', 'videos'));
+        return view('frontend.homepage.index', compact('articles', 'tags', 'games', 'video_first', 'videos'));
     }
 }

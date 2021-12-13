@@ -40,6 +40,7 @@ class GameController extends Controller
             'rate' => $input['rate'],
             'review' => $input['editor1'],
             'publish_date' => $input['publish_date'],
+            'link' => $input['link'],
         );
 
         $game_config_result = array(

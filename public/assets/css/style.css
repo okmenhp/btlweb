@@ -567,11 +567,14 @@ img:hover {
 }
 
 .video-secondary .titles {
+    background-image: linear-gradient(#ffffff05, #000000);
     position: absolute;
     bottom: 0;
     color: #f8f8f8;
-    margin-left: 10px;
-    margin-bottom: 20px;
+    /* width: 100%; */
+    padding: 60px 10px 20px 10px;
+    margin-right: 4px;
+    margin-bottom: 4px;
 }
 
 

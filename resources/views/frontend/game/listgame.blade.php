@@ -25,28 +25,28 @@
     @include('frontend.components.navigation')
     <!-- End Navigation -->
 
-    <!-- Banner -->
-    @include('frontend.homepage.banner')
-    <!-- End Banner -->
-
-    <!-- Games -->
-    @include('frontend.homepage.game')
-    <!-- End Games -->
-
-    <!-- Videos -->
-    @include('frontend.homepage.video')
-    <!-- End videos -->
-
-    <!-- Latest News -->
-    @include('frontend.homepage.article')
-    <!-- End Latest News -->
+    <div class="container">
+        <div class="m-0">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Danh sách game</li>
+            </ol>
+        </div>
+        <div class="container pb-2">
+            <div class="row list-game">
+                @foreach ($games as $record)
+                    <a href="{{route('game.detail', ['id'=>$record->id])}}" class="col-md-3 pt-3 d-flex flex-column">
+                        <img src="{{asset('uploads/games/'. $record->photo_url)}}" alt="" style="height: 12em; object-fit: contain; background: #23262d">
+                        <h3>{{$record->name}}</h3>
+                    </a>
+                @endforeach
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     @include('frontend.components.footer')
     <!-- End Footer -->
-
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 <script>

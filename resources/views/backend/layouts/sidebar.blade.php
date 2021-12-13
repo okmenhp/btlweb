@@ -2,10 +2,10 @@
     <div class="top mt-3 mb-5 mx-5 ">
         <h4 class="mb-0 text-light text-center text-nowrap w-100">Admin Desk</h4>
     </div>
-    <div class="d-flex align-items-center pl-4 mb-1">
+    {{-- <div class="d-flex align-items-center pl-4 mb-1">
         <ion-icon name="home" class="icon-sidebar pr-2"></ion-icon>
-        <a href="javascript:void(0)" class="">Trang chủ</a>
-    </div>
+        <a href="{{route('admin.dashboard')}}" class="">Trang chủ</a>
+    </div> --}}
     <div class="box news-box mt-3">
         <div class="d-flex align-items-center pl-4">
             <ion-icon name="newspaper" class="icon-sidebar pr-2"></ion-icon>

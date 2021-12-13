@@ -25,28 +25,45 @@
     @include('frontend.components.navigation')
     <!-- End Navigation -->
 
-    <!-- Banner -->
-    @include('frontend.homepage.banner')
-    <!-- End Banner -->
-
-    <!-- Games -->
-    @include('frontend.homepage.game')
-    <!-- End Games -->
-
-    <!-- Videos -->
-    @include('frontend.homepage.video')
-    <!-- End videos -->
-
-    <!-- Latest News -->
-    @include('frontend.homepage.article')
-    <!-- End Latest News -->
+    <div class="container">
+        <div class="m-0">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Videos</li>
+            </ol>
+        </div>
+        <div class="row page-news">
+            <div class="col-md-12">
+                <section><h4>Tất cả videos</h4></section>
+                <div class="container">
+                    <hr>
+                    <div class="container pb-3">
+                        <div class="row">
+                            @foreach ($videos as $video)
+                                <div class="col-md-4">
+                                    <div class="row video-secondary d-flex justify-content-center">
+                                        <div class="videos p-1">
+                                            <a class="play" video-url="{!!$video->source!!}">
+                                                <i class="fa fa-play-circle"></i>
+                                            </a>
+                                            <a class="titles" video-url="{!!$video->source!!}">
+                                                <span>{!!$video->content!!}</span>
+                                            </a>
+                                            <img src="{{asset('uploads/videos/'.$video->photo_url)}}" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            @endforeach
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     @include('frontend.components.footer')
     <!-- End Footer -->
-
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 <script>
@@ -91,6 +108,7 @@
 </script>
 <script>
     $(".play").videoPopup();
+    $(".titles").videoPopup();
 </script>
 <script>
     var btn = $('#button');

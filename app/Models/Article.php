@@ -10,5 +10,5 @@ class Article extends Model
     use HasFactory;
 
     protected $table = 'articles';
-    protected $fillable = ['headline', 'text', 'source', 'publish_date', 'tags', 'photo_url', 'priority'];
+    protected $fillable = ['headline', 'text', 'description', 'source', 'publish_date', 'tags', 'photo_url', 'priority'];
 }

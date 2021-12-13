@@ -23,6 +23,7 @@ class ArticleController extends Controller
         $result = array(            
             'headline' => $input['headline'],
             'text' => $input['editor1'],
+            'description' => $input['description'],
             'priority' => $input['priority'],
             'tags' => $input['tag'],
             'source' => $input['source']
@@ -70,6 +71,7 @@ class ArticleController extends Controller
         $result = array(            
             'headline' => $input['headline'],
             'text' => $input['editor1'],
+            'description' => $input['description'],
             'priority' => $input['priority'],
             'tags' => $input['tag'],
             'source' => $input['source']

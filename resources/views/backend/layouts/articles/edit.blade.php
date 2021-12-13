@@ -28,7 +28,10 @@
                     <input type="file" style="width: 40em" name="image">
                 </div>
             </div>
-
+            <div class="description">
+                <p class="">Mô tả: </p>
+                <textarea name="description" cols="100" rows="5">{!! $record->description !!}</textarea>
+            </div>
             <div class="content">
                 <textarea name="editor1">{!! $record->text !!}</textarea>
             </div>
@@ -37,10 +40,10 @@
                     <p class="">Nguồn: </p>
                     <input type="text" style="width: 40em" name="source" value="{!! $record->source !!}">
                 </div>
-                <div class="type d-flex ">
+                {{-- <div class="type d-flex ">
                     <p class="">Ngày đăng bài: </p>
                     <input type="text" style="width: 4em" name="publish_date">
-                </div>
+                </div> --}}
             </div>
             <button type="submit">Chỉnh sửa</button>
         </form>

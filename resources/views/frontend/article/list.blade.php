@@ -25,28 +25,54 @@
     @include('frontend.components.navigation')
     <!-- End Navigation -->
 
-    <!-- Banner -->
-    @include('frontend.homepage.banner')
-    <!-- End Banner -->
-
-    <!-- Games -->
-    @include('frontend.homepage.game')
-    <!-- End Games -->
-
-    <!-- Videos -->
-    @include('frontend.homepage.video')
-    <!-- End videos -->
-
-    <!-- Latest News -->
-    @include('frontend.homepage.article')
-    <!-- End Latest News -->
+    <div class="container">
+        <div class="m-0">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Video</li>
+            </ol>
+        </div>
+            <div class="row">
+                <div class="col heading">
+                    <span>Tin tức</span>
+                </div>
+            </div>
+            <div class="row">
+                @foreach ($articles as $key => $article)
+                    <div class="card-latest-new col-md-4">
+                        <div class="row px-1">
+                            <div class="col-md-12 p-0">
+                                <img src="{{asset('uploads/articles/'.$article->photo_url)}}" alt="">
+                            </div>
+                            <div class="col-md-12 inner">
+                                <div class="body row">
+                                    <div class="tag col-md-12">
+                                        @foreach ($tags[$key] as $tag)
+                                            <a href="javascript:void(0)" class="mb-1">{{$tag}}</a>
+                                        @endforeach
+                                    </div>
+                                    <div class="title col-md-12">
+                                        <a href="{{route('article.detail', ['id'=>$article->id])}}">
+                                            <p>{!!$article->headline!!}</p>
+                                        </a>
+                                    </div>
+                                    <div class="content col-md-12">
+                                        <p >
+                                            {!!$article->description!!}
+                                        </p>
+                                    </div>
+                                    <p class="date">{!! date('d-m-Y', strtotime($article->updated_at))!!}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+    </div>
 
     <!-- Footer -->
     @include('frontend.components.footer')
     <!-- End Footer -->
-
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 <script>
