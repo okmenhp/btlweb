@@ -8,10 +8,12 @@ use App\Models\GameConfig;
 use App\Models\GameGameType;
 use App\Models\GameType;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class GameController extends Controller
 {
-    public function index(){
+    public function index(Request $request){
+        // dd(Auth::guard());
         $records = Game::all();
 
         foreach($records as $key => $record){

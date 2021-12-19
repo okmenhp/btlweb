@@ -12,8 +12,12 @@
 
         <!-- Validation Errors -->
         <x-auth-validation-errors class="mb-4" :errors="$errors" />
-
-        <form method="POST" action="{{ route('login') }}">
+        @if($page != "")
+            <form method="POST" action="{{ route('login', ['page'=>$page]) }}">
+        @else
+            <form method="POST" action="{{ route('login', ['page'=>$page]) }}">
+        @endif
+        {{-- <form method="POST" action="{{ route('login', ['page'=>$page]) }}"> --}}
             @csrf
 
             <!-- Email Address -->
@@ -42,14 +46,18 @@
             </div>
 
             <div class="flex items-center justify-end mt-4">
-                @if (Route::has('password.request'))
+                {{-- @if (Route::has('password.request'))
                     <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('password.request') }}">
                         {{ __('Forgot your password?') }}
                     </a>
+                @endif --}}
+                @if($page == "member")
+                    <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('register') }}">
+                        {{ __('Chưa có tài khoản ?') }}
+                    </a>
                 @endif
-
                 <x-button class="ml-3">
-                    {{ __('Log in') }}
+                    {{ __('Đăng nhập') }}
                 </x-button>
             </div>
         </form>

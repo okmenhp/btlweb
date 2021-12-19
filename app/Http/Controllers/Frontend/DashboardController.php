@@ -10,7 +10,8 @@ use Illuminate\Http\Request;
 
 class DashboardController extends Controller
 {
-    public function index(){
+    public function index(Request $request){
+        // dd($request->session());
         $articles = Article::paginate(6);
         $tags = array();
         foreach($articles as $key => $article){

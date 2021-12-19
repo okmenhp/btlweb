@@ -22,8 +22,17 @@ class RedirectIfAuthenticated
         $guards = empty($guards) ? [null] : $guards;
 
         foreach ($guards as $guard) {
-            if (Auth::guard($guard)->check()) {
-                return redirect(RouteServiceProvider::HOME);
+            switch ($guard){
+                case 'member':
+                    if (Auth::guard($guard)->check()) {
+                        return redirect()->route('home');
+                    }
+                    break;
+                default:
+                    if (Auth::guard($guard)->check()) {
+                        return redirect(RouteServiceProvider::HOME);
+                    }
+                    break;
             }
         }
 

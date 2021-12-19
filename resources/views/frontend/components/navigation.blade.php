@@ -38,6 +38,19 @@
                     </button>
                 </form>
             </div>
+            <div class="ml-4 d-flex">
+                @if(Auth::user())
+                    <p class="mb-0">{{Auth::user()->name}}</p>
+                    <form class="mb-0" action="{{route('logout', ['page'=>'member'])}}" method="post">
+                        @csrf
+                        <button type="submit" class="border-0 px-0 py-0 bg-transparent">
+                            <p class="mb-0 pl-2 ml-2 border-left border-dark">Đăng xuất</p>
+                        </button>
+                    </form>
+                @else
+                    <a href="{{route('login', ['page'=>'member'])}}">Đăng nhập</a>
+                @endif
+            </div>
         </nav>
     </div>
 </nav>

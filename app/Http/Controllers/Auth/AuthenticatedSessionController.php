@@ -7,6 +7,7 @@ use App\Http\Requests\Auth\LoginRequest;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Redirect;
 
 class AuthenticatedSessionController extends Controller
 {
@@ -15,9 +16,14 @@ class AuthenticatedSessionController extends Controller
      *
      * @return \Illuminate\View\View
      */
-    public function create()
+    public function create(Request $request)
     {
-        return view('auth.login');
+        $page = "";
+        if($request->all() != null){
+            $page = $request->all()['page'];
+            return view('auth.login', compact('page'));
+        }
+        return view('auth.login', compact('page'));
     }
 
     /**
@@ -31,8 +37,13 @@ class AuthenticatedSessionController extends Controller
         $request->authenticate();
 
         $request->session()->regenerate();
-
-        return redirect()->intended(RouteServiceProvider::HOME);
+        if($request->all()['page'] == "member" ){
+            return redirect()->intended(RouteServiceProvider::HOME);
+        }else if($request->all()['page'] == "game"){
+            return redirect()->back()->with('mss','đăng nhập thành công');
+        }
+        return redirect()->route('admin.dashboard');
+        // return redirect()->intended(RouteServiceProvider::ADMIN);
     }
 
     /**
@@ -49,6 +60,8 @@ class AuthenticatedSessionController extends Controller
 
         $request->session()->regenerateToken();
 
-        return redirect('/');
+        if($request->all()['page'] == 'member')
+            return redirect('/');
+        return redirect('/admin');
     }
 }

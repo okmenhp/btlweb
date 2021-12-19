@@ -6,27 +6,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/bootstrap.min.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/style.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/font-awesome.min.css') }}">
     {{-- <link rel="stylesheet" href="{{ asset('assets/ionicons/ionicons.min.css') }}"> --}}
     <script src="{{ asset('assets/js/jquery.min.js') }}"></script>
-
-
-
-
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/slick.css') }}" />
     <script type="text/javascript" src="{{ asset('assets/js/slick.min.js') }}"></script>
-
     <script src="{{ asset('assets/js/popper.min.js') }}"></script>
     <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
     <link rel="stylesheet" href="{{ asset('assets/css/videopopup.css') }}">
     <script src="{{ asset('assets/js/videopopup.js') }}"></script>
-
-
-
 </head>
 
 <body>
@@ -80,7 +70,31 @@
                     </h5>
                     <h5>Nhà phát hành: <span>{!!$game->studio!!}</span></h5>
                     <h5>Đánh giá: <span>{!!$game->rate!!}</span></h5>
+                    <h5 class="border-0">Nhận xét</h5>
+                    @if(Auth::user() != null)
+                        <div class="mb-2">
+                            <input type="text" id="comment" data-id="{{$game->id}}" name="comment" placeholder="Nhận xét của bạn..." class="w-100 py-1 px-1" style="border-color: #bcee0e">
+                            <p class="text-danger alert-comment hidden mb-0">Vui lòng nhập nhận xét của bạn!</p>
+                            <button type="submit" id="send-cmt" class="mt-1 text-light px-2" style="background: #31582a; border-color: #bcee0e">Gửi</button>
+                        </div>
+                    @else
+                        <div class="mb-2">
+                            <a href="{{route('login', ['page'=>'game'])}}">
+                                <h6>Đăng nhập để thêm nhận xét</h6>
+                            </a>
+                        </div>
+                    @endif
+                    <div class="comment-area" style="max-height: 25em; overflow-y: scroll">
+                        @foreach ($comments as $comment)
+                            <div class="border px-2 py-1 mb-2">
+                                <p class="mb-2" style="color: #bcee0e">{{$comment['member_name']}}</p>
+                                <h6>{{$comment['content']}}</h6>
+                            </div>
+                        @endforeach
+                    </div>
+                    
                 </div>
+                
                 {{-- <div class="intro-img pt-4">
                     <h4 class="pb-2">hình ảnh</h4>
                     <img class="p-1" src="https://s3-ap-southeast-1.amazonaws.com/images.spiderum.com/sp-images/74f63120fe5b11e78be6e778098cdb44.jpg" alt="" srcset="">
@@ -103,6 +117,32 @@
             $(this).toggleClass('open');
         });
     });
+
+    $('#send-cmt').click(function(){
+        let id = $('#comment').data('id');
+        let comment = $('#comment').val();
+        if(comment != ""){
+            $.ajax({
+                url: '{{route('game.comment')}}',
+                type: 'post',
+                data: {
+                    "_token": "{{ csrf_token() }}",
+                    id: id,
+                    comment: comment
+                },
+                success: function(res){
+                    $('#comment').val('')
+                    $('.comment-area').prepend('<div class="border px-2 py-1 mb-2">'+
+                                                    '<p class="mb-2" style="color: #bcee0e">'+res.name+'</p>'+
+                                                    '<h6>'+res.comment+'</h6>'+
+                                                '</div>')
+                }
+            })
+        }else{
+            $('.alert-comment').toggleClass('hidden');
+        }
+        
+    })
 </script>
 <script>
     $('.slider-responsive').slick({
